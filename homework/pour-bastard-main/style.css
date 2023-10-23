@@ -1,9 +1,9 @@
 @font-face {
-  font-family: bebas; src: url('Bebas\ Neue\ Pro\ Regular.otf') format("opentype");}
+  font-family: bebas; src: url('bebas_neue_pro_regular.otf') format("opentype");}
 * {
   box-sizing: border-box;
 }
-body { font-family: bebas: ;
+body { font-family: bebas;
   margin:0;
   background-color:rgb(11,13,12);
   color: white;
