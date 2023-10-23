@@ -1,0 +1,79 @@
+@font-face {
+  font-family: bebas; src: url('Bebas\ Neue\ Pro\ Regular.otf') format("opentype");}
+* {
+  box-sizing: border-box;
+}
+body { font-family: bebas: ;
+  margin:0;
+  background-color:rgb(11,13,12);
+  color: white;
+}
+img {
+  width:100%;
+}
+a {
+  text-decoration:none;
+  color: white;
+}
+.ad { 
+  background-color: tan;}
+header {
+  text-align:center;
+  position:relative;
+}
+.logo {
+  width:160px;
+}
+.header-buttons {
+  position:absolute;
+  right:100px;
+  top:40px;
+}
+.button {
+  background:rgb(175, 198, 122);
+  display:inline-block;
+  padding: 8px 16px;
+  color: white;
+}
+.button:hover {
+  border:2px solid rgb(175, 198, 122);
+}
+nav ul {
+  padding:10px;
+  margin:0;
+  display: flex;
+  justify-content:space-around;
+  background-color: rgb(175, 198, 122);
+  list-style: none;
+}
+nav li {
+  text-align:center;
+}
+.cards {
+  display:flex;
+  margin-bottom:20px;
+  width:90vw;
+  margin:auto;
+}
+.card { 
+  flex:1;
+  padding:10px;
+}
+
+.card p {
+  margin:0;
+  padding: 8px 0;
+}
+.card br {
+  padding-top:12px;
+}
+footer {
+  display:flex;
+  justify-content: space-between;
+  width:90vw;
+  margin:auto;
+}
+footer .col {
+  flex:1;
+  text-align:center;
+}
