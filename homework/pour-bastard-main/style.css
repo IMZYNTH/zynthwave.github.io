@@ -42,6 +42,7 @@ header {
 }
 .logo {
   width:160px;
+  a
 }
 .header-buttons {
   position:absolute;
@@ -49,23 +50,24 @@ header {
   top:40px;
 }
 .button {
-  background:rgb(175, 198, 122);
+  background:rgb(169, 179, 99);
   display:inline-block;
   padding: 8px 16px;
   color: white;
   font-family: bebas_bold;
 }
 .button:hover {
-  border:2px solid rgb(175, 198, 122);
+  border:2px solid rgb(169, 179, 99);
 }
 nav ul {
-  padding:10px;
+  padding: 5px;px;
   margin:0;
   display: flex;
   justify-content:space-around;
-  background-color: rgb(175, 198, 122);
+  background-color: rgb(169, 179, 99);
   list-style: none;
   font-family: bebas_bold;
+  font-size: 25px;
 }
 nav li {
   text-align:center;
