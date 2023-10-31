@@ -36,39 +36,51 @@ a {
 }
 .ad { 
   background-color: tan;}
+  .ad:hover{
+  font-size: large;
+  }
 header {
   text-align:center;
   position:relative;
 }
 .logo {
-  width:160px;
-}
-.header-buttons {
+  width:200px}
+
+  .header-buttons {
   position:absolute;
-  right:100px;
-  top:40px;
+  right:10px;
+  top:10px;
 }
 .button {
-  background:rgb(175, 198, 122);
+  background:rgb(169, 179, 99);
   display:inline-block;
   padding: 8px 16px;
   color: white;
   font-family: bebas_bold;
 }
 .button:hover {
-  border:2px solid rgb(175, 198, 122);
+  border:2px solid rgb(169, 179, 99);
 }
+
 nav ul {
-  padding:10px;
+  padding: 5px 2px;
   margin:0;
   display: flex;
   justify-content:space-around;
-  background-color: rgb(175, 198, 122);
+  background-color: rgb(169, 179, 99);
   list-style: none;
   font-family: bebas_bold;
+  font-size: 25px;
+
 }
 nav li {
   text-align:center;
+ font-size: 25px;
+
+}
+nav li:hover {
+ font-size: 30px;
+  
 }
 .cards {
   display:flex;
@@ -80,13 +92,54 @@ nav li {
   flex:1;
   padding:10px;
 }
-
+.card1{
+  flex-shrink:0;
+  padding: 15px;
+  justify-content: center;
+}
+.card1 img{
+ min-width:100%;
+}
+.card2{
+  flex:1;
+  justify-content: center;
+}
+.card2 h1 {
+  line-height:.8em;
+  text-align: left;
+  margin: 0;
+  padding: 10px;
+}
+.card2 p {
+  margin:0;
+  padding: 13px;
+}
+.card3{
+  flex:1;
+  justify-content: center;
+}
+.card3 h1 {
+  line-height:.8em;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+.card3 p {
+  margin:0;
+  padding: 13px;
+}
 .card p {
   margin:0;
   padding: 8px 0;
 }
 .card br {
   padding-top:12px;
+}
+.lower h1{
+  line-height:.8em;
+  text-align:left;
+  margin: 0;
+  padding: 10px;
 }
 footer {
   display:flex;
@@ -98,3 +151,4 @@ footer .col {
   flex:1;
   text-align:center;
 }
+
