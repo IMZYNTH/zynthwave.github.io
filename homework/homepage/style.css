@@ -7,7 +7,6 @@ body {
 * {
   box-sizing: border-box;
 }
-
 .logo {
  margin: 65.8px;
  width: 337.70px;
@@ -22,70 +21,32 @@ header {
   width: 80vw;
   border:0px solid gold;
   margin: auto;
-  
 }
-
-
-/*
-display:flex;
-  margin-bottom:20px;
-  width:90vw;
-  margin:auto;
-  */
-
-
-
-
-
 .carousel-container {
   display:flex;
   justify-content: center;
   transition: transform 0.5s;
-  width: 90vw; /* Use 100% width for responsiveness */
-  border: 3px solid white; /* Add a thin border around each element */
+  width: 100%; /* Use 100% width for responsiveness */
+  border: opx solid white; /* Add a thin border around each element */
   overflow:visible;
   flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
   margin: 5px;
   margin: auto;
-  
- 
 }
-
-
-/*
-.carousel-item img{
-  flex: 1;
-  box-sizing:border-box;
-  transition: all 0.3s;
-  margin: -50px;
-  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.5); 
-  border:1px solid red;
-  margin: auto;
-}
-*/
-
-
 .carousel-item{
-
 width: auto;
 margin: -20px;
 border:0px solid red;
 position: relative;
 }
-
 #carousel {
-  
   justify-content:center;
   transform: scale(.4);
 }
-
-
 .carousel-item :hover{
   z-index: 1;
   transition: transform 0.5s;
- 
 }
-
 .carousel-item.selected {
   transform: scale(1.1); /* Move to the middle and scale up by 10% */
   z-index: 1;
