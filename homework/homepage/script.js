@@ -1,68 +1,29 @@
 const carousel = document.getElementById('carousel');
 const items = document.querySelectorAll('.carousel-item');
 const itemWidth = items[0].offsetWidth;
-const spaceBetweenItems = 10; // Adjust the space between items as needed
-const carouselItemCount = items.length;
-let currentIndex = 0;
-items.forEach((item, index) => {
-  item.addEventListener('click', () => {
-    items.forEach((item) => {
-      item.classList.remove('selected');
-      item.style.transform = 'scale(1)'; // Reset the scale for all items
-    });
-    item.classList.add('selected');
-    item.style.transform = 'scale(1.1)'; // Scale the selected item by 10%
-  });
-});
-// Set up click event listeners
-items.forEach((item, index) => {
-  item.addEventListener('click', () => {
-    setCurrentItem(index);
-  });
-});
 
+// Set the default selected index (e.g., the first item)
+let currentIndex = 2;
 
-let isHovered = false;
-
-// Set up hover event listeners
-carousel.addEventListener('mouseenter', () => {
-  isHovered = true;
-  document.body.style.overflow = 'hidden'; // Prevent page scrolling
-});
-
-carousel.addEventListener('mouseleave', () => {
-  isHovered = false;
-  document.body.style.overflow = 'auto'; // Enable page scrolling
-});
-
-function setCurrentItem(index) {
-  currentIndex = index;
-  const middleIndex = Math.floor(carouselItemCount / 2);
-  items.forEach((item, i) => {
-    const itemTranslateX = (i - currentIndex) * (itemWidth + spaceBetweenItems);
-    item.style.transform = `translateX(${itemTranslateX}px)`;
+// Function to update the selected item's styles
+function setSelectedItem(index) {
+  items.forEach((item) => {
     item.classList.remove('selected');
+    
+    item.style.transform = 'scale(0.9)'; // Reset the scale for all items
   });
-  items[middleIndex].classList.add('selected');
+  items[index].classList.add('selected');
+  items[index].style.transform = 'scale(1.1)'; // Scale the selected item by 10%
 }
 
+// Set the default selected item when the page loads
+setSelectedItem(currentIndex);
+
 items.forEach((item, index) => {
   item.addEventListener('click', () => {
-    setCurrentItem(index);
+    setSelectedItem(index); // Update styles when an item is clicked
   });
 });
 
-carousel.addEventListener('wheel', (event) => {
-  if (isHovered) {
-    const delta = event.deltaY;
-    if (delta > 0) {
-      currentIndex = (currentIndex + 1) % carouselItemCount; // Scroll down with looping
-    } else {
-      currentIndex = (currentIndex - 1 + carouselItemCount) % carouselItemCount; // Scroll up with looping
-    }
-    setCurrentItem(currentIndex);
-  }
-});
 
-// Initial position
-setCurrentItem(currentIndex);
+

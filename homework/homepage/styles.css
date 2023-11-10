@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background-color: lightslategrey;
+  
 }
 
 
@@ -17,34 +17,45 @@ body {
 
 .carousel-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: -1%%;
   transform-style: preserve-3d;
   transition: transform 0.5s;
   width: 100%; /* Use 100% width for responsiveness */
-  border: 10px solid blue; /* Add a thin border around each element */
-  transform: scale(.95);
+  border: 0px solid blue; /* Add a thin border around each element */
+  transform: scale(.8);
   overflow: hidden;
   flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
   top: 50%; /* Center the carousel vertically */
-  left: 50%; /* Center the carousel horizontally */
- padding: 0%;
+  left: 50%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  
 }
 
 
 .carousel-item img{
-
-  
+  display: flex;
   transition: transform 0.5s;
   box-sizing:border-box;
   transition: all 0.3s;
-  transform: scale(.95);
-  
- 
+  transform: scale(.9);
+  margin: -50px;
+  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.5); /* Add a drop shadow */
+
 }
 
+.carousel-item :hover{
+ 
+  z-index: 1;
+  transition: transform 0.5s;
+ 
+}
 
 .carousel-item.selected {
   transform: scale(1.1); /* Move to the middle and scale up by 10% */
   z-index: 1;
   transition: transform 0.5s;
-  border: 10px solid red;
+  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.3); /* Add a drop shadow */
 }
