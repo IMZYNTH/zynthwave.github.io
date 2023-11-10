@@ -27,7 +27,7 @@ header {
   justify-content: center;
   transition: transform 0.5s;
   width: 100%; /* Use 100% width for responsiveness */
-  border: opx solid white; /* Add a thin border around each element */
+  border: 0px solid white; /* Add a thin border around each element */
   overflow:visible;
   flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
   margin: 5px;
