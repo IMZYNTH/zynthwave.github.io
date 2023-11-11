@@ -24,6 +24,28 @@ header {
   text-align: center;
   position: relative;
 }
+a {
+    text-decoration:none;
+    color: white;
+}
+nav ul {
+  padding: 0px 0px;
+  margin:236.1458px 0;
+  display: flex;
+  justify-content:space-around;
+  list-style: none;
+  font-family: bebas_bold;
+  font-size: 21.4356 px;
+
+}
+nav li {
+  text-align:center;
+  color: red;
+}
+nav li:hover {
+color: #fff;
+  
+}
 
 .gallery {
   border: solid aquamarine;
@@ -115,12 +137,13 @@ box-shadow: 0px 5px 50px rgba(0, 0, 0, 100);
 
 .buttons{
   border: solid red;
+ margin: 25px 0;
 }
 
 .gallery-controls {
   display: flex;
   justify-content: center;
-  margin: 0100px 0;
+  margin: 25px 0;
   height: 100px;
 }
 
@@ -144,7 +167,7 @@ box-shadow: 0px 5px 50px rgba(0, 0, 0, 100);
 }
 
 .gallery-controls-previous::before {
-  border: solid #000;
+  border: solid #fff;
   border-width: 0 5px 5px 0;
   content: '';
   display: inline-block;
@@ -167,7 +190,7 @@ box-shadow: 0px 5px 50px rgba(0, 0, 0, 100);
 }
 
 .gallery-controls-next::before {
-  border: solid #000;
+  border: solid #fff;
   border-width: 0 5px 5px 0;
   content: '';
   display: inline-block;
@@ -204,7 +227,7 @@ box-shadow: 0px 5px 50px rgba(0, 0, 0, 100);
 }
 
 .gallery-nav li.gallery-item-selected {
-  background: #555;
+  background: #fff;
 }
 
 
