@@ -1,65 +1,68 @@
-const carousel = document.getElementById('carousel');
-const items = document.querySelectorAll('.carousel-item');
-const prevButton = document.getElementById('prevButton');
-const nextButton = document.getElementById('nextButton');
-let currentIndex = 2;
+const galleryContainer = document.querySelector('.gallery-container');
+const galleryControlsContainer = document.querySelector('.gallery-controls');
+const galleryControls = ['previous', 'next'];
+const galleryItems = document.querySelectorAll('.gallery-item');
 
-function setSelectedItem(index) {
-  const middleIndex = Math.floor(items.length / 2);
-  const distanceFromMiddle = index - middleIndex;
+class Carousel {
+  constructor(container, items, controls) {
+    this.carouselContainer = container;
+    this.carouselControls = controls;
+    this.carouselArray = [...items];
+  }
 
-  items.forEach((item, i) => {
-    const distance = 0 - distanceFromMiddle;
-    const spacing = 0;
-    const translateX = distance * (100 + spacing);
-    const scale = i === index ? 1.1 : 0.9;
+  updateGallery() {
+    this.carouselArray.forEach(el => {
+      el.classList.remove('gallery-item-1');
+      el.classList.remove('gallery-item-2');
+      el.classList.remove('gallery-item-3');
+      el.classList.remove('gallery-item-4');
+      el.classList.remove('gallery-item-5');
+    });
 
-    item.style.transform = `translateX(${translateX}%) scale(${scale})`;
+    this.carouselArray.slice(0, 5).forEach((el, i) => {
+      el.classList.add(`gallery-item-${i+1}`);
+    });
+  }
 
-    if (i === index) {
-      item.classList.add('selected');
+  setCurrentState(direction) {
+
+    if (direction.className == 'gallery-controls-previous') {
+      this.carouselArray.unshift(this.carouselArray.pop());
     } else {
-      item.classList.remove('selected');
+      this.carouselArray.push(this.carouselArray.shift());
     }
-  });
+    
+    this.updateGallery();
+  }
 
-  currentIndex = index;
+  setControls() {
+    this.carouselControls.forEach(control => {
+      galleryControlsContainer.appendChild(document.createElement('button')).className = `gallery-controls-${control}`;
+
+      document.querySelector(`.gallery-controls-${control}`).innerText = control;
+    });
+  }
+ 
+  useControls() {
+    const triggers = [...galleryControlsContainer.childNodes];
+
+    triggers.forEach(control => {
+      control.addEventListener('click', e => {
+        e.preventDefault();
+        this.setCurrentState(control);
+      });
+    });
+  }
 }
 
-function updateCarousel() {
-  const itemCount = items.length;
-  currentIndex = (currentIndex + itemCount) % itemCount;
-  setSelectedItem(currentIndex);
-}
+const exampleCarousel = new Carousel(galleryContainer, galleryItems, galleryControls);
 
-prevButton.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + items.length) % items.length;
-  updateCarousel();
-});
+exampleCarousel.setControls();
+exampleCarousel.useControls();
 
-nextButton.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % items.length;
-  updateCarousel();
-});
-
-carousel.addEventListener('wheel', (event) => {
+document.addEventListener('wheel', (event) => {
   event.preventDefault();
-  currentIndex += event.deltaY > 0 ? 1 : -1;
-  updateCarousel();
+  const direction = event.deltaY > 0 ? 'next' : 'previous';
+  exampleCarousel.setCurrentState({ className: `gallery-controls-${direction}` });
 });
 
-items.forEach((item, index) => {
-  item.addEventListener('click', () => {
-    currentIndex = index;
-    updateCarousel();
-  });
-});
-
-// Initial setup
-setSelectedItem(currentIndex);
-
-// Center the carousel initially
-const containerWidth = carousel.offsetWidth;
-const totalWidth = containerWidth * items.length;
-const initialTranslateX = (containerWidth - totalWidth) / 0;
-carousel.style.transform = `translateX(${initialTranslateX}px)`;

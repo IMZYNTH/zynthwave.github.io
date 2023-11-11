@@ -1,89 +1,211 @@
-body {
+body{
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color: rgb(11, 13, 12);
-  color: rgb(15, 1, 1);
+  width: 100%;
+  background-color: rgb(9, 10, 10);
 }
 
 * {
   box-sizing: border-box;
+  
+}
+header {
+  text-align: center;
+  align-items: center;
 }
 
 .logo {
   margin: 65.8px auto; /* Center the logo horizontally */
   width: 337.70px;
+  
+ 
 }
-
 header {
   text-align: center;
   position: relative;
 }
 
-.carousel {
-  border: solid red;
+.gallery {
+  border: solid aquamarine;
   display: flex;
   justify-content: center;
-  align-items: center; /* Center the carousel vertically */
-  height: 35vh; /* Set the carousel height to full viewport height */
+  align-items: center;
+  height: 50vh;
   position: relative;
 }
 
-.carousel-container {
-  border: solid blue;
+.gallery-container {
+  border: solid red;
   align-items: center;
   display: flex;
   height: 400px;
   margin: 0 auto;
   max-width: 500px;
   position: relative;
+  justify-content: center;
 }
 
-
-.carousel-items {
-  border: solid green;
+.gallery-item {
+  border-color: solid green;
   display: flex;
   width: 100%;
-  max-width:427px;
-  box-sizing: border-box;
-  transform: scale(.5);
-  position:center;
-  justify-content:center;
-  position: relative;
+  max-width: 427px;
+  height: 400px;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  z-index: 0;
   flex: 1;
+box-shadow: 0px 5px 50px rgba(0, 0, 0, 100);
 }
 
-.carousel-item {
-  position: relative;
-  flex:1;
-  transform: translateX(50%);
-width: auto;
 
-}
 
-.nav-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-#prevButton {
-  margin-right: 10px; /* Adjust margin as needed */
-}
-
-#nextButton {
-  margin-left: 10px; /* Adjust margin as needed */
-}
-
-.carousel-item.selected {
-  transform: scale(1.1);
+.gallery-item-2,
+.gallery-item-4 {
+  height: 652px;
+  opacity: 1;
+  width: 386.67px;
   z-index: 1;
-  transition: transform 0.5s;
-  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.3);
+  border-color: aquamarine;
 }
 
+.gallery-item-1,
+.gallery-item-5 {
+  height: 538px;
+  opacity: 1;
+  width: 319.06px;
+  z-index: 0;
+  border-color: aquamarine;
+}
+.gallery-item-1 {
+  
+  opacity: 1;
+  transform: translateX(-100%);
+  border-color: aquamarine;
+}
+.gallery-item-2 {
+ 
+  transform: translateX(-50%);
+  border-color: aquamarine;
+}
 
+.gallery-item-3 {
+  box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.35);
+  height: 720px;
+  opacity: 1;
+  
+  transform: translateX(0%);
+  width: 430px;
+  z-index: 2;
+  border-color: aquamarine;
+}
 
+.gallery-item-4 {
+ 
+  transform: translateX(50%);
+  border-color: aquamarine;
+}
 
+.gallery-item-5 {
+ 
+  opacity: 1;
+  transform: translateX(100%);
+}
+
+.buttons{
+  border: solid red;
+}
+
+.gallery-controls {
+  display: flex;
+  justify-content: center;
+  margin: 0100px 0;
+  height: 100px;
+}
+
+.gallery-controls button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 30px;
+  margin: 0 50px;
+  padding: 0 12px;
+  text-transform: capitalize;
+  transform: translateX(200%);
+}
+
+.gallery-controls button:focus {
+  outline: none;
+}
+
+.gallery-controls-previous {
+  position: relative;
+}
+
+.gallery-controls-previous::before {
+  border: solid #000;
+  border-width: 0 5px 5px 0;
+  content: '';
+  display: inline-block;
+  height: 5px;
+  left: -30px;
+  padding: 10px;
+  position: absolute;
+  top: 25%;
+  transform: rotate(135deg) translateY(-50%);
+  transition: left 0.15s ease-in-out;
+  width: 5px;
+}
+
+.gallery-controls-previous:hover::before {
+  left: -40px;
+}
+
+.gallery-controls-next {
+  position: relative;
+}
+
+.gallery-controls-next::before {
+  border: solid #000;
+  border-width: 0 5px 5px 0;
+  content: '';
+  display: inline-block;
+  height: 5px;
+  padding: 10px;
+  position: absolute;
+  right: -30px;
+  top: 45;
+  transform: rotate(-45deg) translateY(-50%);
+  transition: right 0.15s ease-in-out;
+  width: 5px;
+}
+
+.gallery-controls-next:hover::before {
+  right: -40px;
+}
+
+.gallery-nav {
+  bottom: -15px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.gallery-nav li {
+  background: #ccc;
+  border-radius: 50%;
+  height: 10px;
+  margin: 0 16px;
+  width: 10px;
+}
+
+.gallery-nav li.gallery-item-selected {
+  background: #555;
+}
 
 
 /* Guide lines */
