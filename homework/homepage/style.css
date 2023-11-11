@@ -41,12 +41,11 @@ header {
   border: solid green;
   display: flex;
   width: 100%;
-  max-width:427px;
+  max-width: 800px; /* Adjust max-width as needed */
   box-sizing: border-box;
-  transform: scale(.5);
+  transform: scale(0.5);
   position: center;
- justify-content: center;
- 
+  justify-content: center;
 }
 
 .carousel-item {

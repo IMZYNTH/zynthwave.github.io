@@ -9,7 +9,7 @@ function setSelectedItem(index) {
   const distanceFromMiddle = index - middleIndex;
 
   items.forEach((item, i) => {
-    const distance = 0 - distanceFromMiddle;
+    const distance = i - distanceFromMiddle;
     const spacing = 0;
     const translateX = distance * (100 + spacing);
     const scale = i === index ? 1.1 : 0.9;
@@ -61,5 +61,5 @@ setSelectedItem(currentIndex);
 // Center the carousel initially
 const containerWidth = carousel.offsetWidth;
 const totalWidth = containerWidth * items.length;
-const initialTranslateX = (containerWidth - totalWidth) / 0;
+const initialTranslateX = (containerWidth - totalWidth) ;
 carousel.style.transform = `translateX(${initialTranslateX}px)`;
