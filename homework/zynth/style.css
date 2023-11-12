@@ -21,7 +21,7 @@ header {
 
 
 .logo {
-  border: 
+ 
   margin: 65.8px 0 auto; /* Center the logo horizontally */
   width: 337.70px;
 
@@ -33,17 +33,23 @@ header {
 }
 a {
     text-decoration:none;
-    color: white;
+    color: #777;
     font-family: gotham;
+    margin: 48.8263px 0;}
+
+a:hover{ 
+  color: #fff;
 }
+
 nav ul {
-  border: solid
-  padding: 0px 0px;
-  margin:40.4976px 0;
+  
+  padding: 0 ;
+  margin: 0 ;
   display: flex;
   justify-content:space-around;
+  text-align: center;
   list-style: none;
-  font-family: bebas_bold;
+  font-family: gotham;
   font-size: 21.4356px;
 
 
@@ -51,9 +57,12 @@ nav ul {
 nav li {
   text-align:center;
   color: red;
+ 
 }
+
+
 nav li:hover {
-color: #fff;
+
  
 }
 
@@ -176,25 +185,37 @@ box-shadow: 0 0 20px 5px #000000;
 
 
 .buttons{
-  
+ 
+  z-index: 3;
+  width: 90%;
  margin: 25px 0;
+ align-items: center;
+ justify-content: center;
+ display: flex;
+ position: relative;
+ height: 10vh;
+ display: flex;
+ flex: 1;
+position: relative;
 }
 
 
 .gallery-controls {
+
   display: flex;
   justify-content: center;
-  margin: 25px 0;
-  height: 100px;
+  align-items: center;
+  margin: 0;
+  height: 50%;
 }
 
 
 .gallery-controls button {
   background-color: transparent;
   border: 0;
-  cursor: pointer;
-  font-size: 30px;
-  margin: 0 50px;
+  cursor:default;
+  font-size: 0px;
+  margin: auto;
   padding: 0 12px;
   text-transform: capitalize;
   transform: translateX(200%);
@@ -208,6 +229,7 @@ box-shadow: 0 0 20px 5px #000000;
 
 .gallery-controls-previous {
   position: relative;
+  color: transparent;
 }
 
 
@@ -215,25 +237,26 @@ box-shadow: 0 0 20px 5px #000000;
   border: solid #fff;
   border-width: 0 5px 5px 0;
   content: '';
-  display: inline-block;
+  display: flex;
   height: 5px;
-  left: -30px;
-  padding: 10px;
-  position: absolute;
-  top: 25%;
+  
+  padding: 20px;
+  position:inline;
+  
   transform: rotate(135deg) translateY(-50%);
   transition: left 0.15s ease-in-out;
   width: 5px;
+  flex: 1;
 }
 
-
-.gallery-controls-previous:hover::before {
-  left: -40px;
+.gallery-controls-previous::before:hover {
+  
 }
 
 
 .gallery-controls-next {
   position: relative;
+  color: transparent;
 }
 
 
@@ -241,24 +264,24 @@ box-shadow: 0 0 20px 5px #000000;
   border: solid #fff;
   border-width: 0 5px 5px 0;
   content: '';
-  display: inline-block;
+  display: flex;
   height: 5px;
-  padding: 10px;
+  padding: 20px;
   position: absolute;
-  right: -30px;
-  top: 45;
+  
+ 
   transform: rotate(-45deg) translateY(-50%);
   transition: right 0.15s ease-in-out;
   width: 5px;
+  flex: 1;
 }
 
 
-.gallery-controls-next:hover::before {
-  right: -40px;
-}
+
 
 
 .gallery-nav {
+  border: solid #fff;
   bottom: -15px;
   display: flex;
   justify-content: center;
