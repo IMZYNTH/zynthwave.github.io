@@ -91,13 +91,13 @@ class Carousel {
     this.carouselContainer.addEventListener('mouseenter', this.handleMouseEnter);
     this.carouselContainer.addEventListener('mouseleave', this.handleMouseLeave);
 
-    document.addEventListener('wheel', event => {
+    this.carouselContainer.addEventListener('wheel', event => {
       if (this.isHovered) {
         event.preventDefault();
         const direction = event.deltaY > 0 ? 'next' : 'previous';
         this.setCurrentState({ className: `gallery-controls-${direction}` });
       }
-    });
+    }, { passive: false });
   }
 }
 

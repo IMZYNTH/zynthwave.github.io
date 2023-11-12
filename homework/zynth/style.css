@@ -2,7 +2,8 @@
   font-family: gotham; src: url('gothammedium.ttf') format("truetype");}
   @font-face {
     font-family: gothamlight; src: url('gothamlight.ttf') format("truetype");}
-  
+    @font-face {
+      font-family: avant; src: url('itc_avant_garde_gothic_bold.otf') format("opentype");}
 
 body{
   font-family: Arial, sans-serif;
@@ -27,17 +28,13 @@ header {
 .logo {
   margin: 65.8px 0 auto; /* Center the logo horizontally */
   width: 337.70px;
-
-
 }
 
 a {
-  
     text-decoration:none;
     color: #777;
     font-family: gotham;
     text-align: center;
-  
   }
     
 
@@ -192,12 +189,21 @@ box-shadow: 0 0 20px 5px #000;
 }
 
 .description-item {
-  display:none;
+  
+  display: block;
+  margin-left:60vw;
+  text-align: left;
+  color: #fff;
+  font-size: 21.4356px;
+  font-family: gothamlight;
+}
+.description-item h1{
+  font-family: avant;
+  font-size: 56.116px;
+line-height: 50px;
+margin-bottom: 25px;
 }
 
-.description-item-selected {
-  display: block;
-}
 
 
 .buttons{
@@ -353,6 +359,7 @@ opacity: 1;
   text-align: center;
 margin: auto;
 font-family: gothamlight;
+color: #fff;
 }
 
 
