@@ -1,6 +1,8 @@
 @font-face {
   font-family: gotham; src: url('gothammedium.ttf') format("truetype");}
-
+  @font-face {
+    font-family: gothamlight; src: url('gothamlight.ttf') format("truetype");}
+  
 
 body{
   font-family: Arial, sans-serif;
@@ -15,56 +17,66 @@ body{
  
 }
 header {
+ 
   text-align: center;
   align-items: center;
+  justify-content:center;
 }
 
 
 .logo {
- 
   margin: 65.8px 0 auto; /* Center the logo horizontally */
   width: 337.70px;
 
 
 }
-header {
-  text-align: center;
-  position: relative;
-}
+
 a {
+  
     text-decoration:none;
     color: #777;
     font-family: gotham;
-    margin: 48.8263px 0;}
-
-a:hover{ 
-  color: #fff;
-}
-
-nav ul {
+    text-align: center;
   
-  padding: 0 ;
-  margin: 0 ;
-  display: flex;
-  justify-content:space-around;
-  text-align: center;
+
+  
+  }
+    
+
+
+#navbar ul {
+  z-index: 5;
   list-style: none;
+  
+  margin: 0;
+  display: flex;
+  align-items: center; /* Vertically center the text within the list items */
+  justify-content: center;
+  padding: 32.1576px;
+}
+
+#navbar li {
+  margin-right: 48.8263px; /* Adjust this value as needed for space between items */
+  font-size:21.4356px ;
+}
+
+#navbar li:last-child {
+  margin-right: 0;
+}
+
+#navbar a {
+  text-decoration:none;
+  color: #777;
   font-family: gotham;
-  font-size: 21.4356px;
-
-
-}
-nav li {
-  text-align:center;
-  color: red;
- 
+  text-align: center;
 }
 
-
-nav li:hover {
-
- 
+#navbar a:hover{
+  color: #fff;
+  text-decoration: none;
+  
 }
+
 
 
 .gallery {
@@ -73,10 +85,11 @@ nav li:hover {
   justify-content: space-around;
   align-items: center; 
   position: relative;
-  height: 50vh;
+  height: fit-content;
    width: 90%;
  flex: 1;
  margin: auto;
+ overflow: hidden;
  
  
 }
@@ -87,12 +100,12 @@ nav li:hover {
  
   align-items: center;
   display:flex;
-  max-height: 100px;
+  height: 720px;
  
  
   position: relative;
   justify-content: center;
-  height: 100%;
+  
   width: 100%;
   padding-bottom:0;
  
@@ -112,7 +125,7 @@ nav li:hover {
   z-index: 0;
   flex:1;
 object-fit: contain;
-box-shadow: 0 0 20px 5px #000000;
+box-shadow: 0 0 20px 5px #000;
 }
 
 
@@ -249,9 +262,7 @@ position: relative;
   flex: 1;
 }
 
-.gallery-controls-previous::before:hover {
-  
-}
+
 
 
 .gallery-controls-next {
@@ -307,4 +318,63 @@ position: relative;
 
 
 
+
+
+
+.socials {
+  border: solid white;
+  margin: 28.1276px 0;
+  display: flex;
+  height: 28.34px;
+  justify-content: space-around;
+  align-items: center;
+  width: 256.0272px;
+  margin: auto;
+}
+
+.socials a:hover{
+opacity: 1;
+}
+.socials a{
+  opacity:.5;
+  }
+
+.socials img {
+  height: 100%;
+}
+
+.copytext{
+  font-size:10.8677px ;
+  text-align: center;
+margin: auto;
+font-family: gothamlight;
+}
+
+
+
+
+
+/* Guide lines 
+.guideline {
+  position: fixed;
+  height: 100%;
+  width: 2px; 
+  background-color: white;
+}
+
+
+.vertical-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.one-third-left {
+  left: calc(33.33% - 1px); 
+}
+
+
+.one-third-right {
+  left: calc(66.66% - 1px); 
+}*/
 
