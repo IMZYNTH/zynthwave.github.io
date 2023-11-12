@@ -1,3 +1,6 @@
+@font-face {
+  font-family: gotham; src: url('GothamMedium.ttf') format("truetype");}
+
 body{
   font-family: Arial, sans-serif;
   margin: 0;
@@ -15,10 +18,10 @@ header {
 }
 
 .logo {
-  margin: 65.8px auto; /* Center the logo horizontally */
+  border: solid;
+  margin: 65.8px 0 auto; /* Center the logo horizontally */
   width: 337.70px;
-  
- 
+
 }
 header {
   text-align: center;
@@ -29,13 +32,14 @@ a {
     color: white;
 }
 nav ul {
+  border: solid red;
   padding: 0px 0px;
-  margin:236.1458px 0;
+  margin:40.4976px 0;
   display: flex;
   justify-content:space-around;
   list-style: none;
   font-family: bebas_bold;
-  font-size: 21.4356 px;
+  font-size: 21.4356px;
 
 }
 nav li {
@@ -52,23 +56,29 @@ color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 100vh;
   position: relative;
+  
+  max-height: 50vh;
+  object-fit: contain;
 }
 
 .gallery-container {
+  
   border: solid red;
   align-items: center;
-  display: flex;
-  height: 400px;
+  display: inline-flex;
+  height: 100px;
   margin: 0 auto;
   max-width: 500px;
   position: relative;
   justify-content: center;
+  
+  
 }
 
 .gallery-item {
-  border-color: solid green;
+  border:solid red;
   display: flex;
   width: 100%;
   max-width: 427px;
@@ -77,8 +87,10 @@ color: #fff;
   position: absolute;
   transition: all 0.3s ease-in-out;
   z-index: 0;
-  flex: 1;
-box-shadow: 0px 5px 50px rgba(0, 0, 0, 100);
+  flex:1;
+
+  
+
 }
 
 
@@ -113,10 +125,9 @@ box-shadow: 0px 5px 50px rgba(0, 0, 0, 100);
 }
 
 .gallery-item-3 {
-  box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.35);
+  
   height: 720px;
   opacity: 1;
-  
   transform: translateX(0%);
   width: 430px;
   z-index: 2;
@@ -124,13 +135,11 @@ box-shadow: 0px 5px 50px rgba(0, 0, 0, 100);
 }
 
 .gallery-item-4 {
- 
   transform: translateX(50%);
   border-color: aquamarine;
 }
 
 .gallery-item-5 {
- 
   opacity: 1;
   transform: translateX(100%);
 }
