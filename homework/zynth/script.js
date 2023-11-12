@@ -65,4 +65,3 @@ document.addEventListener('wheel', (event) => {
   const direction = event.deltaY > 0 ? 'next' : 'previous';
   exampleCarousel.setCurrentState({ className: `gallery-controls-${direction}` });
 });
-

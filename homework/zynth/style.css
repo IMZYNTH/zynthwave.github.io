@@ -1,5 +1,6 @@
 @font-face {
-  font-family: gotham; src: url('GothamMedium.ttf') format("truetype");}
+  font-family: gotham; src: url('gothammedium.ttf') format("truetype");}
+
 
 body{
   font-family: Arial, sans-serif;
@@ -8,19 +9,22 @@ body{
   background-color: rgb(9, 10, 10);
 }
 
+
 * {
   box-sizing: border-box;
-  
+ 
 }
 header {
   text-align: center;
   align-items: center;
 }
 
+
 .logo {
-  border: solid;
+  border: 
   margin: 65.8px 0 auto; /* Center the logo horizontally */
   width: 337.70px;
+
 
 }
 header {
@@ -30,9 +34,10 @@ header {
 a {
     text-decoration:none;
     color: white;
+    font-family: gotham;
 }
 nav ul {
-  border: solid red;
+  border: solid
   padding: 0px 0px;
   margin:40.4976px 0;
   display: flex;
@@ -41,6 +46,7 @@ nav ul {
   font-family: bebas_bold;
   font-size: 21.4356px;
 
+
 }
 nav li {
   text-align:center;
@@ -48,72 +54,83 @@ nav li {
 }
 nav li:hover {
 color: #fff;
-  
+ 
 }
+
 
 .gallery {
-  border: solid aquamarine;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  position: relative;
   
-  max-height: 50vh;
-  object-fit: contain;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  position: relative;
+  height: 50vh;
+   width: 90%;
+ flex: 1;
+ margin: auto;
+ 
+ 
 }
+
 
 .gallery-container {
-  
-  border: solid red;
+ 
+ 
   align-items: center;
-  display: inline-flex;
-  height: 100px;
-  margin: 0 auto;
-  max-width: 500px;
+  display:flex;
+  max-height: 100px;
+ 
+ 
   position: relative;
   justify-content: center;
-  
-  
+  height: 100%;
+  width: 100%;
+  padding-bottom:0;
+ 
 }
 
+
 .gallery-item {
-  border:solid red;
-  display: flex;
-  width: 100%;
+ 
+ 
+  width: 90vw;
   max-width: 427px;
-  height: 400px;
+  height: 100%;
+  max-height: 100vh;
   opacity: 0;
   position: absolute;
   transition: all 0.3s ease-in-out;
   z-index: 0;
   flex:1;
-
-  
-
+object-fit: contain;
+box-shadow: 0 0 20px 5px #000000;
 }
+
+
+
 
 
 
 .gallery-item-2,
 .gallery-item-4 {
-  height: 652px;
+  height: 40vh;
   opacity: 1;
-  width: 386.67px;
+  width: auto;
   z-index: 1;
   border-color: aquamarine;
 }
 
+
 .gallery-item-1,
 .gallery-item-5 {
-  height: 538px;
+  height: 30vh;
   opacity: 1;
-  width: 319.06px;
+  width: auto;
   z-index: 0;
   border-color: aquamarine;
 }
 .gallery-item-1 {
-  
+ 
   opacity: 1;
   transform: translateX(-100%);
   border-color: aquamarine;
@@ -124,14 +141,22 @@ color: #fff;
   border-color: aquamarine;
 }
 
+
 .gallery-item-3 {
+ 
+  height: 50vh;
   
-  height: 720px;
   opacity: 1;
   transform: translateX(0%);
-  width: 430px;
+  width: auto;
   z-index: 2;
   border-color: aquamarine;
+  
+ 
+}
+.gallery-item img{
+  width: 720px;
+  height: 100%;
 }
 
 .gallery-item-4 {
@@ -139,15 +164,22 @@ color: #fff;
   border-color: aquamarine;
 }
 
+
 .gallery-item-5 {
   opacity: 1;
   transform: translateX(100%);
 }
 
+
+
+
+
+
 .buttons{
-  border: solid red;
+  
  margin: 25px 0;
 }
+
 
 .gallery-controls {
   display: flex;
@@ -155,6 +187,7 @@ color: #fff;
   margin: 25px 0;
   height: 100px;
 }
+
 
 .gallery-controls button {
   background-color: transparent;
@@ -167,13 +200,16 @@ color: #fff;
   transform: translateX(200%);
 }
 
+
 .gallery-controls button:focus {
   outline: none;
 }
 
+
 .gallery-controls-previous {
   position: relative;
 }
+
 
 .gallery-controls-previous::before {
   border: solid #fff;
@@ -190,13 +226,16 @@ color: #fff;
   width: 5px;
 }
 
+
 .gallery-controls-previous:hover::before {
   left: -40px;
 }
 
+
 .gallery-controls-next {
   position: relative;
 }
+
 
 .gallery-controls-next::before {
   border: solid #fff;
@@ -213,9 +252,11 @@ color: #fff;
   width: 5px;
 }
 
+
 .gallery-controls-next:hover::before {
   right: -40px;
 }
+
 
 .gallery-nav {
   bottom: -15px;
@@ -227,6 +268,7 @@ color: #fff;
   width: 100%;
 }
 
+
 .gallery-nav li {
   background: #ccc;
   border-radius: 50%;
@@ -235,31 +277,11 @@ color: #fff;
   width: 10px;
 }
 
+
 .gallery-nav li.gallery-item-selected {
   background: #fff;
 }
 
-
-/* Guide lines */
-.guideline {
-  position: fixed;
-  height: 100%;
-  width: 2px; /* Adjust thickness as needed */
-  background-color: white;
-}
-
-.vertical-center {
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.one-third-left {
-  left: calc(33.33% - 1px); /* Adjust for half of the thickness */
-}
-
-.one-third-right {
-  left: calc(66.66% - 1px); /* Adjust for half of the thickness */
-}
 
 
 
