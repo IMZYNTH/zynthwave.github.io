@@ -79,15 +79,15 @@ a {
 .gallery {
   
   display: flex;
-  justify-content: space-around;
+  
   align-items: center; 
   position: relative;
   height: fit-content;
-   width: 90%;
+   width: 80%;
  flex: 1;
  margin: auto;
  overflow: hidden;
- 
+ height: 50%;
  
 }
 
