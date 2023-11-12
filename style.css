@@ -1,3 +1,9 @@
+@font-face {
+  font-family: gotham; src: url('gothammedium.ttf') format("truetype");}
+  @font-face {
+    font-family: gothamlight; src: url('gothamlight.ttf') format("truetype");}
+  
+
 body{
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,81 +11,148 @@ body{
   background-color: rgb(9, 10, 10);
 }
 
+
 * {
   box-sizing: border-box;
-  
-}
-header {
-  text-align: center;
-  align-items: center;
-}
-
-.logo {
-  margin: 65.8px auto; /* Center the logo horizontally */
-  width: 337.70px;
-  
  
 }
 header {
+ 
   text-align: center;
-  position: relative;
+  align-items: center;
+  justify-content:center;
 }
+
+
+.logo {
+  margin: 65.8px 0 auto; /* Center the logo horizontally */
+  width: 337.70px;
+
+
+}
+
+a {
+  
+    text-decoration:none;
+    color: #777;
+    font-family: gotham;
+    text-align: center;
+  
+
+  
+  }
+    
+
+
+#navbar ul {
+  z-index: 5;
+  list-style: none;
+  
+  margin: 0;
+  display: flex;
+  align-items: center; /* Vertically center the text within the list items */
+  justify-content: center;
+  padding: 32.1576px;
+}
+
+#navbar li {
+  margin-right: 48.8263px; /* Adjust this value as needed for space between items */
+  font-size:21.4356px ;
+}
+
+#navbar li:last-child {
+  margin-right: 0;
+}
+
+#navbar a {
+  text-decoration:none;
+  color: #777;
+  font-family: gotham;
+  text-align: center;
+}
+
+#navbar a:hover{
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+
 
 .gallery {
-  border: solid aquamarine;
+  
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
+  justify-content: space-around;
+  align-items: center; 
   position: relative;
+  height: fit-content;
+   width: 90%;
+ flex: 1;
+ margin: auto;
+ overflow: hidden;
+ 
+ 
 }
+
 
 .gallery-container {
-  border: solid red;
+ 
+ 
   align-items: center;
-  display: flex;
-  height: 400px;
-  margin: 0 auto;
-  max-width: 500px;
+  display:flex;
+  height: 720px;
+ 
+ 
   position: relative;
   justify-content: center;
+  
+  width: 100%;
+  padding-bottom:0;
+ 
 }
 
+
 .gallery-item {
-  border-color: solid green;
-  display: flex;
-  width: 100%;
+ 
+ 
+  width: 90vw;
   max-width: 427px;
-  height: 400px;
+  height: 100%;
+  max-height: 100vh;
   opacity: 0;
   position: absolute;
   transition: all 0.3s ease-in-out;
   z-index: 0;
-  flex: 1;
-box-shadow: 0px 5px 50px rgba(0, 0, 0, 100);
+  flex:1;
+object-fit: contain;
+box-shadow: 0 0 20px 5px #000;
 }
+
+
+
 
 
 
 .gallery-item-2,
 .gallery-item-4 {
-  height: 652px;
+  height: 40vh;
   opacity: 1;
-  width: 386.67px;
+  width: auto;
   z-index: 1;
   border-color: aquamarine;
 }
 
+
 .gallery-item-1,
 .gallery-item-5 {
-  height: 538px;
+  height: 30vh;
   opacity: 1;
-  width: 319.06px;
+  width: auto;
   z-index: 0;
   border-color: aquamarine;
 }
 .gallery-item-1 {
-  
+ 
   opacity: 1;
   transform: translateX(-100%);
   border-color: aquamarine;
@@ -90,102 +163,136 @@ box-shadow: 0px 5px 50px rgba(0, 0, 0, 100);
   border-color: aquamarine;
 }
 
+
 .gallery-item-3 {
-  box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.35);
-  height: 720px;
-  opacity: 1;
+ 
+  height: 50vh;
   
+  opacity: 1;
   transform: translateX(0%);
-  width: 430px;
+  width: auto;
   z-index: 2;
   border-color: aquamarine;
+  
+ 
+}
+.gallery-item img{
+  width: 720px;
+  height: 100%;
 }
 
 .gallery-item-4 {
- 
   transform: translateX(50%);
   border-color: aquamarine;
 }
 
+
 .gallery-item-5 {
- 
   opacity: 1;
   transform: translateX(100%);
 }
 
+
+
+
+
+
 .buttons{
-  border: solid red;
+ 
+  z-index: 3;
+  width: 90%;
+ margin: 25px 0;
+ align-items: center;
+ justify-content: center;
+ display: flex;
+ position: relative;
+ height: 10vh;
+ display: flex;
+ flex: 1;
+position: relative;
 }
 
+
 .gallery-controls {
+
   display: flex;
   justify-content: center;
-  margin: 0100px 0;
-  height: 100px;
+  align-items: center;
+  margin: 0;
+  height: 50%;
 }
+
 
 .gallery-controls button {
   background-color: transparent;
   border: 0;
-  cursor: pointer;
-  font-size: 30px;
-  margin: 0 50px;
+  cursor:default;
+  font-size: 0px;
+  margin: auto;
   padding: 0 12px;
   text-transform: capitalize;
   transform: translateX(200%);
 }
 
+
 .gallery-controls button:focus {
   outline: none;
 }
 
+
 .gallery-controls-previous {
   position: relative;
+  color: transparent;
 }
 
+
 .gallery-controls-previous::before {
-  border: solid #000;
+  border: solid #fff;
   border-width: 0 5px 5px 0;
   content: '';
-  display: inline-block;
+  display: flex;
   height: 5px;
-  left: -30px;
-  padding: 10px;
-  position: absolute;
-  top: 25%;
+  
+  padding: 20px;
+  position:inline;
+  
   transform: rotate(135deg) translateY(-50%);
   transition: left 0.15s ease-in-out;
   width: 5px;
+  flex: 1;
 }
 
-.gallery-controls-previous:hover::before {
-  left: -40px;
-}
+
+
 
 .gallery-controls-next {
   position: relative;
+  color: transparent;
 }
 
+
 .gallery-controls-next::before {
-  border: solid #000;
+  border: solid #fff;
   border-width: 0 5px 5px 0;
   content: '';
-  display: inline-block;
+  display: flex;
   height: 5px;
-  padding: 10px;
+  padding: 20px;
   position: absolute;
-  right: -30px;
-  top: 45;
+  
+ 
   transform: rotate(-45deg) translateY(-50%);
   transition: right 0.15s ease-in-out;
   width: 5px;
+  flex: 1;
 }
 
-.gallery-controls-next:hover::before {
-  right: -40px;
-}
+
+
+
 
 .gallery-nav {
+  border: solid #fff;
   bottom: -15px;
   display: flex;
   justify-content: center;
@@ -195,6 +302,7 @@ box-shadow: 0px 5px 50px rgba(0, 0, 0, 100);
   width: 100%;
 }
 
+
 .gallery-nav li {
   background: #ccc;
   border-radius: 50%;
@@ -203,31 +311,72 @@ box-shadow: 0px 5px 50px rgba(0, 0, 0, 100);
   width: 10px;
 }
 
+
 .gallery-nav li.gallery-item-selected {
-  background: #555;
+  background: #fff;
 }
 
 
-/* Guide lines */
+
+
+
+
+.socials {
+  
+  margin: 28.1276px ;
+  display: flex;
+  height: 28.34px;
+  justify-content: space-around;
+  align-items: center;
+  width: 256.0272px;
+  margin: auto;
+
+}
+
+.socials a:hover{
+opacity: 1;
+}
+.socials a{
+  opacity:.5;
+  }
+
+.socials img {
+  height: 100%;
+}
+
+.copytext{
+  padding: 32.1576px;
+  font-size:10.8677px ;
+  text-align: center;
+margin: auto;
+font-family: gothamlight;
+}
+
+
+
+
+
+/* Guide lines 
 .guideline {
   position: fixed;
   height: 100%;
-  width: 2px; /* Adjust thickness as needed */
+  width: 2px; 
   background-color: white;
 }
+
 
 .vertical-center {
   left: 50%;
   transform: translateX(-50%);
 }
 
+
 .one-third-left {
-  left: calc(33.33% - 1px); /* Adjust for half of the thickness */
+  left: calc(33.33% - 1px); 
 }
+
 
 .one-third-right {
-  left: calc(66.66% - 1px); /* Adjust for half of the thickness */
-}
-
-
+  left: calc(66.66% - 1px); 
+}*/
 
