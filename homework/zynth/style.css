@@ -322,14 +322,15 @@ position: relative;
 
 
 .socials {
-  border: solid white;
-  margin: 28.1276px 0;
+  
+  margin: 28.1276px ;
   display: flex;
   height: 28.34px;
   justify-content: space-around;
   align-items: center;
   width: 256.0272px;
   margin: auto;
+
 }
 
 .socials a:hover{
@@ -344,6 +345,7 @@ opacity: 1;
 }
 
 .copytext{
+  padding: 32.1576px;
   font-size:10.8677px ;
   text-align: center;
 margin: auto;
