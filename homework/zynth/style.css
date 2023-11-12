@@ -38,8 +38,6 @@ a {
     font-family: gotham;
     text-align: center;
   
-
-  
   }
     
 
@@ -77,7 +75,9 @@ a {
   
 }
 
-
+.project{
+  color: #fff;
+}
 
 .gallery {
   
@@ -167,7 +167,6 @@ box-shadow: 0 0 20px 5px #000;
 .gallery-item-3 {
  
   height: 50vh;
-  
   opacity: 1;
   transform: translateX(0%);
   width: auto;
@@ -192,9 +191,13 @@ box-shadow: 0 0 20px 5px #000;
   transform: translateX(100%);
 }
 
+.description-item {
+  display:none;
+}
 
-
-
+.description-item-selected {
+  display: block;
+}
 
 
 .buttons{
