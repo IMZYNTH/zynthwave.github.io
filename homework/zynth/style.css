@@ -77,18 +77,33 @@ a {
 }
 
 .gallery {
+  border: solid red;
   display: flex;
   align-items: center; 
   position: relative;
+  justify-content: center;
   height: 720px;
-   width: 80%;
+  width: 50vw;
  flex: 1;
- margin: auto;
  overflow: hidden;
- height: 50%;
- 
+ margin-right: 50%;
 }
 
+.wrapper{
+  display: flex;
+  border: solid blue;
+  height: 30vh;
+}
+
+.desc{
+  background-color: aqua;
+  border: solid white;
+  display:flex;
+  width:50vw;
+  position: relative;
+height: 720px;
+flex: 1;
+}
 
 .gallery-container {
   align-items: center;
@@ -181,17 +196,10 @@ box-shadow: 0 0 20px 5px #000;
   transform: translateX(100%);
 }
 
-.desc{
-  background-color: aqua;
-  border: solid white;
-  display:flex;
-  width:25vw;
-  align-items: center;
-  justify-content:center;
-  position: relative;
-  z-index: 6;
-height: 100%;
-}
+
+
+
+
 
 .description-item {
   
@@ -304,7 +312,6 @@ position: relative;
 
 
 
-
 .gallery-nav {
   border: solid #fff;
   bottom: -15px;
@@ -368,10 +375,27 @@ color: #fff;
 }
 
 
+/* Add a media query for screens with a maximum width of 768 pixels */
+@media (max-width: 1080px) {
+  .gallery,
+  .desc {
+    width: 100%; /* Set the width to 100% for full width on smaller screens */
+    max-width: none; /* Reset max-width for full width */
+  }
+
+  .gallery {
+    flex-direction: column; /* Stack items in a column */
+    height: 50%; /* Auto height to accommodate content */
+  }
+
+  .desc {
+     /* Set width to 100% for full width */
+    height: 50%;
+  }
+}
 
 
-
-/* Guide lines 
+ 
 .guideline {
   position: fixed;
   height: 100%;
@@ -393,5 +417,5 @@ color: #fff;
 
 .one-third-right {
   left: calc(66.66% - 1px); 
-}*/
+}
 
