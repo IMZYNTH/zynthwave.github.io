@@ -13,6 +13,21 @@ class Carousel {
     // Bind the event handlers to the class instance
     this.handleMouseEnter = this.handleMouseEnter.bind(this);
     this.handleMouseLeave = this.handleMouseLeave.bind(this);
+    
+  handleTrackpadScroll(events); {
+    if (this.isHovered) {
+      event.preventDefault();
+
+      // Check if the event is from a trackpad
+      const isTrackpad = events.wheelDeltaY ? false : true;
+
+      if (!isTrackpad) {
+        const delta = events.deltaY;
+        const direction = delta > 0 ? 'next' : 'previous';
+        this.setCurrentState({ className: `gallery-controls-${direction}` });
+      }
+    }
+  }
   }
 
   updateGallery() {
@@ -138,4 +153,3 @@ function updateProjectDescription(selectedIndex) {
       break;
   }
 }
-
