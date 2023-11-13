@@ -77,12 +77,10 @@ a {
 }
 
 .gallery {
-  
   display: flex;
-  
   align-items: center; 
   position: relative;
-  height: fit-content;
+  height: 720px;
    width: 80%;
  flex: 1;
  margin: auto;
@@ -93,19 +91,14 @@ a {
 
 
 .gallery-container {
- 
- 
   align-items: center;
   display:flex;
   height: 720px;
- 
- 
   position: relative;
   justify-content: center;
-  
   width: 100%;
   padding-bottom:0;
- 
+ overflow: hidden;
 }
 
 
@@ -191,7 +184,8 @@ box-shadow: 0 0 20px 5px #000;
 .description-item {
   
   display: block;
-  margin-left:60vw;
+  margin-left:55vw;
+  margin-right:9vw ;
   text-align: left;
   color: #fff;
   font-size: 21.4356px;
