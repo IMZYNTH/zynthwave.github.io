@@ -28,6 +28,22 @@ class Carousel {
       el.classList.add(`gallery-item-${i + 1}`);
     });
   }
+  updateDescription() {
+    const currentIndex = this.carouselArray.findIndex(item => item.classList.contains('gallery-item-selected'));
+    const descriptionItems = document.querySelectorAll('.description-item');
+
+    descriptionItems.forEach(description => {
+      description.style.display = 'none'; // Hide all descriptions initially
+    });
+
+    if (currentIndex !== -1) {
+      const selectedDescription = document.querySelector(`.description-item-${currentIndex + 1}`);
+      if (selectedDescription) {
+        selectedDescription.style.display = 'block'; // Show the description for the selected item
+      }
+    }
+  }
+
 
   setCurrentState(direction) {
     if (direction.className == 'gallery-controls-previous') {
@@ -37,8 +53,11 @@ class Carousel {
     }
 
     this.updateGallery();
+    this.updateDescription();
   }
 
+
+ 
   setControls() {
     this.carouselControls.forEach(control => {
       galleryControlsContainer.appendChild(document.createElement('button')).className = `gallery-controls-${control}`;
@@ -72,13 +91,13 @@ class Carousel {
     this.carouselContainer.addEventListener('mouseenter', this.handleMouseEnter);
     this.carouselContainer.addEventListener('mouseleave', this.handleMouseLeave);
 
-    document.addEventListener('wheel', event => {
+    this.carouselContainer.addEventListener('wheel', event => {
       if (this.isHovered) {
         event.preventDefault();
         const direction = event.deltaY > 0 ? 'next' : 'previous';
         this.setCurrentState({ className: `gallery-controls-${direction}` });
       }
-    });
+    }, { passive: false });
   }
 }
 
@@ -88,4 +107,35 @@ exampleCarousel.setControls();
 exampleCarousel.useControls();
 exampleCarousel.setupEventListeners();
 
+ // Initial update of description
+ exampleCarousel.updateDescription();
+
+const projectDescription = document.getElementById('project-description');
+
+galleryItems.forEach(item => {
+  item.addEventListener('click', () => {
+    const selectedIndex = item.dataset.index;
+    updateProjectDescription(selectedIndex);
+    
+  });
+});
+
+function updateProjectDescription(selectedIndex) {
+  switch (selectedIndex) {
+    case '1':
+      projectDescription.textContent = "This is the description for item 1.";
+      break;
+    case '2':
+      projectDescription.textContent = "This is the description for item 2.";
+      break;
+    // Add more cases as needed
+    case '3':
+      projectDescription.textContent = "This is the description for item 3.";
+      break; case '4':
+      projectDescription.textContent = "This is the description for item 4.";
+      break; case '5':
+      projectDescription.textContent = "This is the description for item 5.";
+      break;
+  }
+}
 
