@@ -455,7 +455,10 @@ font-family: gothamlight,  Arial, Helvetica, sans-serif, system-ui, -apple-syste
 color: #fff;
 }
 
-
+.twitchwrap{
+  border: solid white;
+  height: 100vh;
+}
 
 
  /*
