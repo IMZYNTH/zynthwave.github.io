@@ -194,6 +194,7 @@ a {
   .description-item{
     text-align: center;
 align-items: center;
+color: #fff;
   }
   
 }
@@ -458,8 +459,17 @@ color: #fff;
 .twitchwrap{
   border: solid white;
   height: 100vh;
+  display: flex;
+  flex-direction: row;
 }
-
+.twitchcreator{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  margin: 24px auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
  /*
 .guideline {
