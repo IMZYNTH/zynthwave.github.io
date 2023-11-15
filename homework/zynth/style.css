@@ -98,13 +98,16 @@ a {
 }
 
 .desc {
+  
   display: inline-flex;
-  width: 10%;
+  width: fit-content;
   margin: auto;
   max-width: 50%;
   height: fit-content;
   flex: 50%;
   position: relative;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 1080px) {
@@ -119,7 +122,17 @@ a {
   flex: 50%;
   position: relative;
   }
-
+  .description-item {
+  justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: #fff;
+    font-size: 21.4356px;
+    font-family: gothamlight;
+    position: relative;
+    margin: auto 1vw;
+  }
 }
 
 
@@ -178,6 +191,11 @@ a {
     align-items: center;
     justify-content: center;
   }
+  .description-item{
+    text-align: center;
+align-items: center;
+  }
+  
 }
 
 
@@ -285,17 +303,7 @@ box-shadow: 0 0 20px 5px #000;
 
 
 
-.description-item {
-  
-  display: flex;
-  margin-left:15px;
-  margin-right:15px;
-  text-align: left;
-  color: #fff;
-  font-size: 21.4356px;
-  font-family: gothamlight;
-  position: relative;
-}
+
 .description-item h1{
   font-family: avant;
   font-size: 56.116px;
