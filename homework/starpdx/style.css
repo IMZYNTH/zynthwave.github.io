@@ -126,7 +126,17 @@ border: solid white;
 align-items: center;
 }
 
-  
+.description-item2{
+  border: solid yellow;
+  font-family: gothamlight, Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+  font-size: 24px;
+  width: 100%;
+  position: relative;
+  align-items: center;
+justify-content: center;
+height: 200px;
+text-align: center;
+}
 
     
     .description-item h2{
@@ -193,6 +203,8 @@ align-items: center;
     }
     .description-item2{
         border: solid red;
+        font-family: gothamlight, Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+        font-size: 24px;
         width: 100%;
         position: relative;
         align-items: center;
@@ -221,19 +233,10 @@ align-items: center;
     position: relative;
     align-items: left;
 justify-content: center;
-height: fit-content;
+height: 100%;
   }
 
-  .description-item2{
-    border: solid yellow;
-    width: fit-content;
-    display: flex;
-  
-    position: relative;
-    align-items: left;
-justify-content: center;
-height: 200px;
-  }
+
 
   .description-item2 img{
 height: 100%;
@@ -261,7 +264,7 @@ width: 100%;
   justify-content: center;
         }
       }
-  
+ 
   
   
  
@@ -269,4 +272,39 @@ width: 100%;
  
  
   
-  
+      .socials {
+  border: solid white;
+       
+        display: flex;
+        height: 20%;
+        justify-content: center;
+        align-items: center;
+        width: 10%;
+        margin: auto;
+      }
+      
+      .socials a:hover{
+      opacity: 1;
+      }
+      .socials a{
+        opacity:.5;
+        }
+      
+      .socials img {
+       
+       width: 100%;
+       position: relative;
+       justify-content: center;
+        
+      }
+      
+      .copytext{
+        padding: 32.1576px;
+        font-size:10.8677px ;
+        text-align: center;
+      margin: auto;
+      font-family: gothamlight,  Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+      color: #fff;
+      }
+
+      
