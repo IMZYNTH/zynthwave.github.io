@@ -1,0 +1,272 @@
+@font-face {
+    font-family: gotham; src: url('gothammedium.ttf') format("truetype");}
+    @font-face {
+      font-family: gothamlight; src: url('gothamlight.ttf') format("truetype");}
+      @font-face {
+        font-family: avant; src: url('itc_avant_garde_gothic_bold.otf') format("opentype");}
+  
+
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(9, 10, 10);
+}
+
+#navbar{
+    border: solid green;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    flex: 50%;
+    
+    position: relative;
+}
+ul {
+     /*    border: solid red; */
+ 
+    display: flex;
+    list-style-type: none;
+    margin: auto;
+    padding:0 5vw;
+    overflow: hidden;
+    align-items: center;
+    
+    /* aligning the content of the <ul> to the end
+       of the inline axis: */
+    justify-content: end;
+  }
+  
+.logo{
+    border: solid blue;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        flex:25%;
+        overflow: hidden;
+}
+.banner img{
+width: 100%;
+}
+.logo img{
+    height: 54px;
+}
+
+ 
+  li a {
+    display: block;
+    color: #fff;
+    font-family:gotham;
+    font-size: 28px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: auto;
+  }
+  
+  li:first-child {
+    /* setting the margin of the inline-end of the
+       first-child <li> element to 'auto', in order
+       to push the first-child away from the rest of
+       the content: */
+    margin-inline-end: auto;
+   
+  }
+
+ 
+ button{
+    display: flex;
+    padding: 5px;
+    background-color: transparent;
+    border: solid grey;
+    font-family: gotham, Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    font-size: 24px;   
+    margin: 10px auto;
+ }
+ button:hover{
+    border: solid white;
+ }
+ 
+  .description-item h1{
+    font-family: gotham, Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    font-size: 100px;
+  line-height: 50px;
+  margin-bottom: 25px;
+  }
+
+  .desc {
+   
+  background-image: url(images/showcase1.png);
+  background-position: center;
+    display:flex;
+    width: fit-content;
+    margin: auto;
+    max-width: 100%;
+    height: fit-content;
+    flex: 1;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 977px;
+  }
+.wrapper {
+border: solid white;
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  margin: auto;
+  height:fit-content ;
+align-items: center;
+}
+
+  
+
+    
+    .description-item h2{
+        border: #fff;
+    justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      font-size: 38px;
+      font-family: gotham, Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+      position: relative;
+      margin: auto 1vw;
+    }
+    .description-item1 h2{
+    
+       padding: 10px 0;
+    justify-content: center;
+      align-items: center;
+      text-align: left;
+      color: #fff;
+      font-size: 38px;
+      font-family: gotham, Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+      position: relative;
+      margin: auto 5vw;
+      line-height: 50px;
+    }
+
+    .description-item1 p{
+        padding: 10px 0;
+        border: #fff;
+    justify-content: center;
+      align-items: center;
+      text-align: left;
+      color: #fff;
+      font-size: 24px;
+      font-family: gothamlight, Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+      position: relative;
+      margin: auto 5vw;
+    }
+  
+  
+  .banner{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  
+    .pic {
+  border: solid blue;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        flex: 50%;
+        overflow: hidden;
+      }
+  
+  /* Add a media query for screens narrower than 1080px */
+  @media (max-width: 1080px) {
+    .wrapper {
+      flex-direction: column; /* Change to column layout */
+    }
+    .description-item2{
+        border: solid red;
+        width: 100%;
+        position: relative;
+        align-items: center;
+    justify-content: center;
+    height: 200px;
+      }
+    .banner{
+        display: flex;
+        width: 100%;
+        position: relative;
+        align-items: center;
+        justify-content:center ;
+        height: 100%;
+    }
+    .desc {
+      width: 977px; /* Take up full width */
+      height: fit-content;
+    }
+  }
+  
+  .description-item1{
+    border: solid red;
+    width: 70%;
+    display: flex;
+    flex-direction:column ;
+    position: relative;
+    align-items: left;
+justify-content: center;
+height: fit-content;
+  }
+
+  .description-item2{
+    border: solid yellow;
+    width: fit-content;
+    display: flex;
+  
+    position: relative;
+    align-items: left;
+justify-content: center;
+height: 200px;
+  }
+
+  .description-item2 img{
+height: 100%;
+width: 100%;
+  }
+
+  @media (min-width: 1080px) {
+
+    .pic {
+        justify-content: center;
+          display: flex;
+          align-items: center;
+          position: relative;
+          margin: auto 1vw;
+
+
+          display: inline-flex;
+  width: fit-content;
+  margin: auto;
+  max-width: 50%;
+  height: fit-content;
+  flex: 50%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+        }
+      }
+  
+  
+  
+ 
+  
+ 
+ 
+  
+  
