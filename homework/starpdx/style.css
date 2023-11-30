@@ -74,7 +74,7 @@ width: 100%;
     
     color: rgb(9, 10, 10);
     font-family:gotham;
-    font-size: 18px;
+    font-size: 28px;
     text-align: center;
     padding: 0 20px;
     text-decoration: none;
@@ -100,6 +100,7 @@ width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
+  line-height: 50px;
   
 }
  
@@ -108,7 +109,7 @@ width: 100%;
     padding: 5px;
     background-color: transparent;
     border: solid white;
-    font-family: gotham, Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: gotham, Arial, Helvetica, sans-serif, system-ui;
     font-size: 24px;   
     margin: 10px 0px;
     color: #fff;
@@ -121,7 +122,7 @@ width: 100%;
  }
  
   .description-item h1{
-    font-family: gotham, Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: gotham, Arial, Helvetica, sans-serif, system-ui;
     font-size: 100px;
   line-height: 50px;
   margin-bottom: 25px;
@@ -173,7 +174,7 @@ align-items: center;
 
 .description-item2 {
   
-  font-family: gothamlight, Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: gothamlight, Arial, Helvetica, sans-serif, system-ui;
   font-size: 24px;
   width: 100%;
   position: relative;
@@ -186,7 +187,7 @@ position: relative;
 }
 .description-item2 p {
   
-  font-family: gothamlight, Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: gothamlight, Arial, Helvetica, sans-serif, system-ui;
   font-size: 24px;
  
   position: relative;
@@ -199,7 +200,7 @@ display: flex;
 }
 .description-item2 h2{
   
-  font-family: gotham, Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: gotham, Arial, Helvetica, sans-serif, system-ui;
   font-size: 38px;
   width: 100%;
   position: relative;
@@ -216,7 +217,7 @@ text-align: center;
       text-align: center;
       color: #fff;
       font-size: 38px;
-      font-family: gotham, Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-family: gotham, Arial, Helvetica, sans-serif, system-ui;
       position: relative;
       margin: auto;
     }
@@ -228,7 +229,7 @@ text-align: center;
       text-align: left;
       color: #fff;
       font-size: 38px;
-      font-family: gotham, Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-family: gotham, Arial, Helvetica, sans-serif, system-ui;
       position: relative;
       margin: auto 5vw;
       line-height: 50px;
@@ -242,7 +243,7 @@ text-align: center;
       text-align: left;
       color: #fff;
       font-size: 24px;
-      font-family: gothamlight, Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-family: gothamlight, Arial, Helvetica, sans-serif, system-ui;
       position: relative;
       margin: auto 5vw;
     }
@@ -254,7 +255,7 @@ text-align: center;
     text-align: left;
     color: #fff;
     font-size: 24px;
-    font-family: gothamlight, Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: gothamlight, Arial, Helvetica, sans-serif, system-ui;
     
     margin: auto 5vw;
   }
@@ -309,14 +310,21 @@ text-align: center;
            justify-content: center;
             
           }
-          
+          .center{
+            
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            position: relative;
+          }
           .copytext{
             padding: 32.1576px;
             font-size:10.8677px ;
             text-align: center;
           margin: auto;
-          font-family: gothamlight,  Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-family: gothamlight, Arial, Helvetica, sans-serif, system-ui;
           color: #fff;
+          position: relative;
           }
           .description-item1{
             
@@ -334,7 +342,7 @@ text-align: center;
   display: flex;
   max-width: 100%;
           }
-          
+
            /* Add a media query for screens narrower than 1080px */
   @media (max-width: 1080px) {
     .wrapper {
@@ -355,14 +363,16 @@ text-align: center;
       height: fit-content;
     }
   .description-item h1{
-    font-size:68px ;
+    font-size:52px ;
+    line-height: 10px;
   }
+  
   .description-item h2{
-    font-size: 28px;
+    font-size: 18px;
     align-items: center;
     justify-content: center;
     position: relative;
-    line-height: 25px;
+    line-height: 20px;
   }
   .description-item2 p{
     
@@ -398,7 +408,19 @@ width: 100%;
   li a {
     font-size: 18px;
   }
-
+  .pic {
+    justify-content: center;
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin: auto;
+      display: inline-flex;
+height: fit-content;
+flex: 50%;
+position: relative;
+justify-content: center;
+width: 100vw;
+    }
   }
 
   @media (min-width: 1080px) {
@@ -413,7 +435,6 @@ width: 100%;
   height: fit-content;
   flex: 50%;
   position: relative;
-  
   justify-content: center;
         }
       }
