@@ -284,7 +284,58 @@ text-align: center;
         
       }
   
-  /* Add a media query for screens narrower than 1080px */
+ 
+    
+    .socials {
+    
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+          }
+          
+          .socials a:hover{
+          opacity: 1;
+          }
+          .socials a{
+            opacity:.5;
+            }
+          
+          .socials img {
+           
+           width: 60px;
+           position: relative;
+           justify-content: center;
+            
+          }
+          
+          .copytext{
+            padding: 32.1576px;
+            font-size:10.8677px ;
+            text-align: center;
+          margin: auto;
+          font-family: gothamlight,  Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          color: #fff;
+          }
+          .description-item1{
+            
+            width: 100vw;
+            display: flex;
+            flex-direction:column ;
+            position: relative;
+            
+        justify-content: center;
+        height: 100%;
+        flex: 50%;
+        margin: auto;
+          }
+          .pic img{
+  display: flex;
+  max-width: 100%;
+          }
+          
+           /* Add a media query for screens narrower than 1080px */
   @media (max-width: 1080px) {
     .wrapper {
       flex-direction: column; /* Change to column layout */
@@ -359,9 +410,6 @@ width: 100%;
           position: relative;
           margin: auto;
           display: inline-flex;
-  
-  
-  
   height: fit-content;
   flex: 50%;
   position: relative;
@@ -370,52 +418,3 @@ width: 100%;
         }
       }
       
-    
-    .socials {
-    
-           
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        
-          }
-          
-          .socials a:hover{
-          opacity: 1;
-          }
-          .socials a{
-            opacity:.5;
-            }
-          
-          .socials img {
-           
-           width: 60px;
-           position: relative;
-           justify-content: center;
-            
-          }
-          
-          .copytext{
-            padding: 32.1576px;
-            font-size:10.8677px ;
-            text-align: center;
-          margin: auto;
-          font-family: gothamlight,  Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-          color: #fff;
-          }
-          .description-item1{
-            
-            width: 100vw;
-            display: flex;
-            flex-direction:column ;
-            position: relative;
-            
-        justify-content: center;
-        height: 100%;
-        flex: 50%;
-        margin: auto;
-          }
-          .pic img{
-  display: flex;
-  max-width: 100%;
-          }
