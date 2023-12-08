@@ -270,7 +270,7 @@ font-family: gothamlight, Arial, Helvetica, sans-serif, system-ui, -apple-system
   
   display:flex;
   flex-direction: row;
-  height: fit-content;
+  height: 40px;
   margin: auto;
   width: 100%;
   padding-top: 10px;
