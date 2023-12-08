@@ -141,21 +141,21 @@ a {
 
 
 .wrapper {
+  border: solid red;
   display: flex;
   flex-direction: row;
   height: fit-content;
   margin: auto;
-  width: 75%;
+  width: 100%;
 }
 
 .gallery {
-  
+  border: solid blue;
   display: flex;
   align-items: center;
   justify-content: center;
   height: fit-content;
   width: 50%;
-  flex: 50%;
   overflow: hidden;
 }
 
@@ -164,9 +164,9 @@ a {
   display: inline-flex;
   width: fit-content;
   margin: auto;
-  max-width: 50%;
+  width: 50%;
   height: fit-content;
-  flex: 50%;
+  
   position: relative;
   align-items: center;
   justify-content: center;
@@ -272,25 +272,24 @@ font-family: gothamlight, Arial, Helvetica, sans-serif, system-ui, -apple-system
   flex-direction: row;
   height: fit-content;
   margin: auto;
-  width: 75%;
-  padding-top: 40.4976px;
+  width: 100%;
+  padding-top: 10px;
 }
 
 
 
 
 .buttons{
-  
+  border: solid whitesmoke;
   display:flex;
   width: 50%;
   overflow: hidden;
  align-items: center;
  justify-content: center;
- 
  position: relative;
  height: fit-content;
- flex: 50%;
- 
+ margin-bottom: 720px;
+ z-index: 11;
 }
 
 
@@ -307,22 +306,19 @@ font-family: gothamlight, Arial, Helvetica, sans-serif, system-ui, -apple-system
 
 
 .gallery-item {
- 
-  width: 90vw;
+  width: 100%;
   max-width: 427px;
   height: 100%;
   max-height: 720px;
   opacity: 0;
   position: absolute;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   z-index: 0;
-  flex:1;
-object-fit: contain;
 box-shadow: 0 0 20px 5px #000;
 }
 .gallery-item-2,
 .gallery-item-4 {
-  height: 40vh;
+  height: 66%;
   opacity: 1;
   width: auto;
   z-index: 1;
@@ -330,7 +326,7 @@ box-shadow: 0 0 20px 5px #000;
 }
 .gallery-item-1,
 .gallery-item-5 {
-  height: 30vh;
+  height: 33%;
   opacity: 1;
   width: auto;
   z-index: 0;
@@ -338,7 +334,7 @@ box-shadow: 0 0 20px 5px #000;
 }
 .gallery-item-1 {
   opacity: 1;
-  transform: translateX(-100%);
+  transform: translateX(-200%);
   border-color: aquamarine;
 }
 .gallery-item-2 {
@@ -346,7 +342,7 @@ box-shadow: 0 0 20px 5px #000;
   border-color: aquamarine;
 }
 .gallery-item-3 {
-  height: 50vh;
+  height: 100%;
   opacity: 1;
   transform: translateX(0%);
   width: auto;
@@ -360,10 +356,10 @@ box-shadow: 0 0 20px 5px #000;
 }
 .gallery-item-5 {
   opacity: 1;
-  transform: translateX(100%);
+  transform: translateX(200%);
 }
 .gallery-item img{
-  width: 720px;
+  width: 427px;
   height: 100%;
 }
 
@@ -386,13 +382,13 @@ margin-bottom: 25px;
 
 
 .gallery-controls {
- 
+ border: solid red;
   display: flex;
   justify-content: space-between;
   align-items:center;
   height: fit-content;
   width: 100%;
-  flex: 1;
+  
   
  
 }
