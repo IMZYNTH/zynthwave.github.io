@@ -6,7 +6,7 @@
       font-family: avant; src: url('itc_avant_garde_gothic_bold.otf') format("opentype");}
 
 footer{
-  border: solid green;
+ 
   margin-top: 40.4976px;
   padding-top: 40.4976px;
 }
@@ -61,7 +61,25 @@ width: 50%;
   font-size:21.4356px ;
   color: #fff;
 }
+.parallax{
+   /* The image used */
+   background-image: url("images/portrait.jpg");
 
+   /* Set a specific height */
+   min-height: 1080px; 
+ 
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position:top;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.parallax p,h1{
+ color: #fff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 body{
  
   font-family: Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -145,7 +163,7 @@ a {
 
 
 .wrapper {
-  border: solid red;
+  
   display: flex;
   flex-direction: row;
   height: fit-content;
@@ -154,7 +172,7 @@ a {
 }
 
 .gallery {
-  border: solid blue;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -284,7 +302,7 @@ font-family: gothamlight, Arial, Helvetica, sans-serif, system-ui, -apple-system
 
 
 .buttons{
-  border: solid whitesmoke;
+  
   display:flex;
   width: 50%;
   overflow: hidden;
@@ -389,7 +407,7 @@ margin-bottom: 25px;
 
 
 .gallery-controls {
- border: solid red;
+
   display: flex;
   justify-content: space-between;
   align-items:center;
@@ -560,7 +578,7 @@ color: #fff;
 .imagegallery{
   align-items: center;
   justify-content: center;
-  border: solid red;
+ 
   display: flex;
   flex-wrap: wrap;
 }
