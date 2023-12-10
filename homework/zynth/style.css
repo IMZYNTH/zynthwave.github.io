@@ -61,25 +61,7 @@ width: 50%;
   font-size:21.4356px ;
   color: #fff;
 }
-.parallax{
-   /* The image used */
-   background-image: url("images/portrait.jpg");
 
-   /* Set a specific height */
-   min-height: 1080px; 
- 
-   /* Create the parallax scrolling effect */
-   background-attachment: fixed;
-   background-position:top;
-   background-repeat: no-repeat;
-   background-size: cover;
-}
-.parallax p,h1{
- color: #fff;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
 body{
  
   font-family: Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -585,4 +567,51 @@ color: #fff;
 
 .imagegallery a{
   padding: 10px;
+}
+
+
+.parallax{
+height: 100vh;
+overflow-y: auto;
+overflow-x: hidden;
+perspective: 10px;
+}
+.parallax h1{
+  
+  padding-top: 25%;
+font-size: 7rem;
+color: #fff;
+
+}
+.header{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+.background{
+transform: translateZ(-10px) scale(2);
+ height: 100%;
+  width: 100%;
+}
+.foreground{
+  transform: translateZ(-5px) scale(1.5);
+  padding-top: 30%;
+}
+
+.background,
+.foreground{
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+}
+section{
+  font-size: 2rem;
+  padding: 2rem;
+  color: #fff;
+  background-color: rgb(9, 10, 10);
+  box-shadow: 0 0 50px 5px #000;
 }
