@@ -5,6 +5,10 @@
     @font-face {
       font-family: avant; src: url('itc_avant_garde_gothic_bold.otf') format("opentype");}
 
+      img {
+        width:100%;
+      }
+
 footer{
  
   margin-top: 40.4976px;
@@ -145,7 +149,8 @@ a {
 
 
 .wrapper {
-  
+  align-items: center;
+  justify-content: center;
   display: flex;
   flex-direction: row;
   height: fit-content;
@@ -244,7 +249,7 @@ a {
     
     display: inline-flex;
     width: 100%; /* Take up full width */
-    margin: auto;
+    margin:  auto;
     max-width: 100%; /* Adjust max-width for .empty */
     height: fit-content;
     flex: 100%; /* Take up full width */
@@ -571,10 +576,11 @@ color: #fff;
 
 
 .parallax{
-height: 100vh;
+height: 1080px;
 overflow-y: auto;
 overflow-x: hidden;
 perspective: 10px;
+
 }
 .parallax h1{
   
@@ -588,18 +594,21 @@ color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 1080px;
   transform-style: preserve-3d;
   z-index: -1;
+  
 }
 .background{
 transform: translateZ(-10px) scale(2);
  height: 100%;
   width: 100%;
+  
 }
 .foreground{
-  transform: translateZ(-5px) scale(1.5);
+  transform: translateZ(-5px) scale(1.4);
   padding-top: 30%;
+  
 }
 
 .background,
@@ -609,9 +618,154 @@ transform: translateZ(-10px) scale(2);
   z-index: -1;
 }
 section{
-  font-size: 2rem;
+  
+  
+  margin-top: 23%;
+  font-size:42px;
   padding: 2rem;
   color: #fff;
-  background-color: rgb(9, 10, 10);
-  box-shadow: 0 0 50px 5px #000;
+  text-align:center;
+  font-family: gotham, Arial, Helvetica, sans-serif, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+.bio p{
+  display: flex;
+  text-align: left;
+  font-size:21.4356px ;
+  font-family: gothamlight,  Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+margin: 2.5%;
+color: #fff;
+line-height: 25px;
+align-items: center;
+justify-content: center;
+
+}
+.bio h1{
+display: flex;
+font-family: avant,  Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+margin: 2.5%;
+color: #fff;
+line-height: 50px;
+text-transform: uppercase;
+text-align: left;
+}
+
+.bio a{
+  border: solid red;
+    text-decoration:none;
+    color: #777;
+    font-family: gothamlight, Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+  }
+.biopic{
+  
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-left: 2.5%;
+  }
+
+  .backing{
+   background-image:url('images/setup_pic2.png');
+   background-position:center;
+   background-repeat: no-repeat;
+  }
+  .comingsoon img{
+    width: 100%;
+  }
+
+  .parallax2{
+    height: 1080px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    
+    }
+    .parallax2 h1{
+      
+      padding-top: 25%;
+    font-size: 7rem;
+    color: #fff;
+    
+    }
+    .header2{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 1080px;
+      transform-style: preserve-3d;
+      z-index: -1;
+      
+    }
+    .background2{
+    transform: translateZ(-10px) scale(2);
+     height: 100%;
+      width: 100%;
+      
+    }
+    .foreground2{
+      transform: translateZ(-5px) scale(1.4);
+      
+      
+    }
+    
+    .background2,
+    .foreground2{
+      position: absolute;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .cards {
+      border: solid red;
+      display:flex;
+      margin-bottom:20px;
+      width:100%;
+      margin:auto;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+    .card { 
+      border: solid blue;
+      flex:1;
+      padding:10px;
+      color: #fff;
+      width: 30%;
+       z-index: 3;
+    }
+    .card1{
+      flex: 1;
+      
+      justify-content: center;
+    }
+    .card img{
+     min-width:100%;
+    }
+    .card2{
+      flex:1;
+      justify-content: center;
+    }
+    
+    
+    .card3{
+      flex:1;
+      justify-content: center;
+    }
+   
+    .card h1 {
+      font-family: avant, Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+      font-size: 56.116px;
+    line-height: 50px;
+      margin:0;
+      padding: 8px 0;
+    }
+    .card p {
+      margin:0;
+      padding: 8px 0;
+      font-size:21.4356px ;
+      font-family: gothamlight,  Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    
+    }
+    .card br {
+      padding-top:12px;
+    }

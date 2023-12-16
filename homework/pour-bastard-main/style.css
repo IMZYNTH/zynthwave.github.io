@@ -85,7 +85,7 @@ nav li:hover {
 .cards {
   display:flex;
   margin-bottom:20px;
-  width:90vw;
+  width:100%;
   margin:auto;
 }
 .card { 
@@ -98,7 +98,7 @@ nav li:hover {
   justify-content: center;
 }
 .card1 img{
- min-width:100%;
+ width:100%;
 }
 .card2{
   flex:1;

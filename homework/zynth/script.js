@@ -37,6 +37,7 @@ class Carousel {
   updateDescription() {
     const currentIndex = this.carouselArray.findIndex(item => item.classList.contains('gallery-item-selected'));
     const descriptionItems = document.querySelectorAll('.description-item');
+    const backgroundColors = ['##090909', '##090909', '##090909', '##090909', '#090909']; // Add your desired background colors
 
 
     descriptionItems.forEach(description => {
@@ -48,6 +49,8 @@ class Carousel {
       const selectedDescription = document.querySelector(`.description-item-${currentIndex + 1}`);
       if (selectedDescription) {
         selectedDescription.style.display = 'block'; // Show the description for the selected item
+             document.body.style.backgroundColor = backgroundColors[currentIndex];
+
       }
     }
   }
