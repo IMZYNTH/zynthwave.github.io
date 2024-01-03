@@ -760,6 +760,7 @@ text-align: left;
       background-repeat: no-repeat;
       background-size:cover;
       position: relative;
+      transition: background-image ease-in;
     }
     .card1:hover{
       background-image: url(images/blackshirtback.png);
@@ -848,7 +849,28 @@ text-align: left;
       background-size:cover;
       position: relative;
     }
-    
+    .card6:hover{
+      background-image: url(images/beaniewhite.png);
+    }
+
+    .card7{
+      display: flex;
+
+      flex:1;
+      justify-content: center;
+      color: #fff;
+      flex: 1;
+      justify-content: center;
+      background-image: url(images/wrap1.jpg);
+      background-position:top;
+      background-repeat: no-repeat;
+      background-size:cover;
+      position: relative;
+    }
+    .card7:hover{
+      background-image: url(images/wrap2.jpg);
+    }
+
 
 
     .card h1 {
