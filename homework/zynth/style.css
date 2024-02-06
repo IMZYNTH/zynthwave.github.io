@@ -10,7 +10,8 @@
       }
 
 footer{
- 
+  background-color: #090909;
+
   margin-top: 40.4976px;
   padding-top: 40.4976px;
 }
@@ -81,7 +82,7 @@ body{
 }
 header {
   
-  
+  background-color: #090909;
   text-align: center;
   align-items: center;
   justify-content:center;
@@ -165,7 +166,8 @@ a {
 }
 
 .gallery {
-  
+  padding-top: 40.4976px;
+  padding-bottom: 40.4976px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -175,7 +177,7 @@ a {
 }
 
 .desc {
-  
+
   display: inline-flex;
   width: fit-content;
   margin: auto;
@@ -217,7 +219,8 @@ a {
 
 
 .gallery-container {
-  
+ 
+
   align-items: center;
   display:flex;
   max-height:720px;
@@ -230,6 +233,7 @@ a {
 
 
 .gallery-item {
+  
   width: 100%;
   
   height: 100%;
@@ -307,7 +311,6 @@ margin-bottom: 25px;
 
 
 .gallery-controls {
-
   display: flex;
   justify-content: space-between;
   align-items:center;
@@ -403,7 +406,7 @@ margin-bottom: 25px;
   width: 10px;
 }
 .gallery-nav li.gallery-item-selected {
-  background: red;
+  
 }
 
 
@@ -900,7 +903,6 @@ line-height: 1em;
       }
       
       .buttons {
-        
         overflow: hidden;
         align-items: center;
         justify-content: center;
@@ -953,3 +955,5 @@ line-height: 1em;
       font-size: 100px;
       text-align: center;
     }
+
+    

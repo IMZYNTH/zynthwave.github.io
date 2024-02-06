@@ -37,7 +37,13 @@ class Carousel {
   updateDescription() {
     const currentIndex = this.carouselArray.findIndex(item => item.classList.contains('gallery-item-selected'));
     const descriptionItems = document.querySelectorAll('.description-item');
-    const backgroundColors = ['##090909', '##090909', '##090909', '##090909', '#090909']; // Add your desired background colors
+    const backgroundImages = [
+      'url("images/dead_bg.png")',// Dead Pirates Card
+      'url("images/merc_bg.png")',// Pour Bastards Card
+      'url("images/setup_pic.png")',// zynth Card
+      'url("images/pbb_bg.png")', // real Pour Bastards Card
+      'url("images/gb_bg.png")'// Art Book
+        ];
 
 
     descriptionItems.forEach(description => {
@@ -49,7 +55,8 @@ class Carousel {
       const selectedDescription = document.querySelector(`.description-item-${currentIndex + 1}`);
       if (selectedDescription) {
         selectedDescription.style.display = 'block'; // Show the description for the selected item
-             document.body.style.backgroundColor = backgroundColors[currentIndex];
+        document.body.style.backgroundImage = backgroundImages[currentIndex];
+        document.body.style.backgroundPosition = 'center'; // Center the background image
 
       }
     }
