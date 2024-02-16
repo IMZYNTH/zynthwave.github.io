@@ -10,7 +10,8 @@
       }
 
 footer{
- 
+  background-color: #090909;
+
   margin-top: 40.4976px;
   padding-top: 40.4976px;
 }
@@ -71,7 +72,7 @@ body{
   font-family: Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   width: 100%;
-  background-color: rgb(9, 10, 10);
+  background-color: #090909
 }
 
 
@@ -81,7 +82,7 @@ body{
 }
 header {
   
-  
+  background-color: #090909;
   text-align: center;
   align-items: center;
   justify-content:center;
@@ -131,6 +132,9 @@ a {
   margin-right: 48.8263px; /* Adjust this value as needed for space between items */
   font-size:21.4356px ;
 }
+#navbar li a:active{
+  color: #fff;
+}
 
 #navbar li:last-child {
   margin-right: 0;
@@ -165,7 +169,8 @@ a {
 }
 
 .gallery {
-  
+  padding-top: 40.4976px;
+  padding-bottom: 40.4976px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -175,7 +180,7 @@ a {
 }
 
 .desc {
-  
+
   display: inline-flex;
   width: fit-content;
   margin: auto;
@@ -217,7 +222,8 @@ a {
 
 
 .gallery-container {
-  
+ 
+
   align-items: center;
   display:flex;
   max-height:720px;
@@ -230,6 +236,7 @@ a {
 
 
 .gallery-item {
+  
   width: 100%;
   
   height: 100%;
@@ -307,7 +314,6 @@ margin-bottom: 25px;
 
 
 .gallery-controls {
-
   display: flex;
   justify-content: space-between;
   align-items:center;
@@ -403,7 +409,7 @@ margin-bottom: 25px;
   width: 10px;
 }
 .gallery-nav li.gallery-item-selected {
-  background: red;
+  
 }
 
 
@@ -587,13 +593,14 @@ text-align: left;
   }
 
   .parallax2{
-    height: fit-content;
+    width: 100vw;
+    height: 50vh;
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
     background-image: url(images/appearelsetup.png);
 background-position: center;
-background-size: 100%;
+background-size:contain;
 background-repeat: no-repeat;
 
 
@@ -636,7 +643,7 @@ justify-content: center;
       transform: translateZ(-10px) scale(1.5);
       width: 120%;
       position: absolute;
-      overflow: visible;
+      overflow: hidden;
       padding-top: 60%;
 }
     
@@ -921,7 +928,6 @@ line-height: 1em;
       }
       
       .buttons {
-        
         overflow: hidden;
         align-items: center;
         justify-content: center;
@@ -946,6 +952,43 @@ line-height: 1em;
     
     
 
+    .faq-item p{
+      list-style-type: square;
+      list-style-position: outside;
+      color: #fff;
+      font-size: 21.4356px;
+      margin: 20px;
+line-height: 125%;
+      font-family: gothamlight, Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    }
+    .faq-item ul{
+      list-style-type: square;
+      list-style-position: outside;
+      color: #fff;
+      font-size: 21.4356px;
+      line-height: 125%;
 
+      font-family: gothamlight, Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    }
+    .faq-item h2{
+      color: #fff;
+      font-family: avant;
+      font-size: 36px;
+      margin: 20px;
+    }
+    .faq-item h1{
+      color: #fff;
+      font-family: avant;
+      font-size: 100px;
+      
+    }
 
-   
+    .faq-item{
+      margin-left: 25%;
+      margin-right: 25%;
+      margin-top: 7%;
+      margin-bottom: 7%;
+
+    }
+
+    
