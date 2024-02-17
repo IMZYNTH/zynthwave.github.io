@@ -103,7 +103,7 @@ header {
 a {
   margin: auto;
     text-decoration:none;
-    color: #777;
+    color: #fff;
     font-family: gotham;
     text-align: center;
   }
@@ -132,8 +132,8 @@ a {
   margin-right: 48.8263px; /* Adjust this value as needed for space between items */
   font-size:21.4356px ;
 }
-#navbar li a:active{
-  color: #fff;
+#navbar li a:hover{
+  opacity: 100%;
 }
 
 #navbar li:last-child {
@@ -142,13 +142,14 @@ a {
 
 #navbar a {
   text-decoration:none;
-  color: #777;
+  color: #fff;
   font-family: gotham,  Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
   text-align: center;
+  opacity: 25%;
 }
 
-#navbar a:hover{
-  color: #fff;
+#navbar a:active{
+  opacity: 100%;
   text-decoration: none;
   
 }
@@ -408,9 +409,7 @@ margin-bottom: 25px;
   margin: 0 16px;
   width: 10px;
 }
-.gallery-nav li.gallery-item-selected {
-  
-}
+
 
 
 
@@ -991,4 +990,7 @@ line-height: 125%;
 
     }
 
-    
+    #navbar li .currentpage{
+      opacity: 100%;
+      color: fff;
+    }
