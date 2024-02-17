@@ -186,8 +186,8 @@ const projectDescription = document.getElementById('project-description');
 
 galleryItems.forEach(item => {
   item.addEventListener('click', () => {
-    const selectedIndex = item.dataset.index;
-    updateProjectDescription(selectedIndex);
+   // Prevent changing the selected item on click
+    event.stopPropagation();
    
   });
 });
