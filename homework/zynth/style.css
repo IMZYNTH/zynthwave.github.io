@@ -915,6 +915,12 @@ line-height: 1em;
     
     /* Add a media query for screens narrower than 1080px */
     @media (max-width: 1080px) {
+      .body{
+        background-color: #090909;
+      }
+      .wrapper{
+        background-size:0%;
+      }
       .wrapper {
         flex-direction: column; /* Change to column layout */
       }

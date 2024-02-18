@@ -51,17 +51,32 @@ class Carousel {
     });
 
 
-    if (currentIndex !== -1) {
-      const selectedDescription = document.querySelector(`.description-item-${currentIndex + 1}`);
-      if (selectedDescription) {
-        selectedDescription.style.display = 'block'; // Show the description for the selected item
+    //if (currentIndex !== -1) {
+     // const selectedDescription = document.querySelector(`.description-item-${currentIndex + 1}`);
+      //if (selectedDescription) {
+        //selectedDescription.style.display = 'block'; // Show the description for the selected item
+        //document.body.style.backgroundImage = backgroundImages[currentIndex];
+        //document.body.style.backgroundPosition = 'center'; // Center the background image
+
+      //}
+    //}
+  //}
+  if (currentIndex !== -1) {
+    const selectedDescription = document.querySelector(`.description-item-${currentIndex + 1}`);
+    if (selectedDescription) {
+      selectedDescription.style.display = 'block'; // Show the description for the selected item
+
+      // Check screen width before updating background
+      if (window.innerWidth >= 1080) {
         document.body.style.backgroundImage = backgroundImages[currentIndex];
         document.body.style.backgroundPosition = 'center'; // Center the background image
-
+      } else {
+        // Set background to none if screen width is less than 1080 pixels
+        document.body.style.backgroundImage = 'none';
       }
     }
   }
-
+}
 
 
 
