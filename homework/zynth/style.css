@@ -34,7 +34,7 @@ footer{
   width:fit-content;
   height: 50%;
   
-  background-color: rgb(9, 10, 10);
+  background-color:#090909;
   margin: auto;
   text-align: center;
 justify-content: center;
@@ -77,9 +77,11 @@ body{
   font-family: gothamlight, Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
  background-position:center;
  background-repeat: no-repeat;
+ background-size: 95%;
+ background-position: center;
   width: 100vw;
   background-color: #090909;
-  overflow: hidden;
+  
 }
 
 
@@ -208,21 +210,10 @@ a {
   height: fit-content;
   width: 50%;
   overflow: hidden;
-  margin-left: 15%;
+  margin-left: 10%;
 }
 
-.desc {
 
-  display: inline-flex;
-  width: fit-content;
-  margin: auto;
-  width: 50%;
-  height: fit-content;
-  
-  position: relative;
-  align-items: center;
-  justify-content: center;
-}
 
 
 .wrapper2{
@@ -232,7 +223,6 @@ a {
   margin: auto;
   width: 100%;
   padding-top: 10px;
-
 }
 
 
@@ -248,7 +238,7 @@ a {
  height: fit-content;
  margin-bottom: 720px;
  z-index: 11;
- margin-left: 15%;
+ margin-left: 6.5%;
 }
 
 
@@ -857,6 +847,18 @@ line-height: 1em;
       padding-top:12px;
     }
 
+    .desc {
+        display: inline-flex;
+        width: fit-content;
+        margin: auto;
+       margin-right: 10%;
+        width: 50%;
+        height: fit-content;
+        
+        position: relative;
+        align-items: center;
+        justify-content: center;
+      }
 
     @media (min-width: 1080px) {
 
@@ -879,8 +881,8 @@ line-height: 1em;
         font-size: 21.4356px;
         font-family: gothamlight, Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
         position: relative;
-        margin: auto 1vw;
-        margin-right: 50%;
+        margin-left:  4vw;
+        margin-right: 33%;
       }
     }
     
@@ -921,6 +923,7 @@ line-height: 1em;
       .desc {
         width: 100%; /* Take up full width */
         height: fit-content;
+        margin: auto;
       }
     
       .wrapper2 {
@@ -949,7 +952,7 @@ line-height: 1em;
         
         display: inline-flex;
         width: 100%; /* Take up full width */
-        margin:  auto;
+        margin:auto;
         max-width: 100%; /* Adjust max-width for .empty */
         height: fit-content;
         flex: 100%; /* Take up full width */
@@ -967,7 +970,10 @@ line-height: 1em;
     color: #fff;
     font-size: 21.4356px;
     font-family: gothamlight, Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+    justify-content: center;
+    margin: auto;
+    margin-left: 5%;
+    margin-right: 5%;
       }
       .biopic{
         width: 60%;
