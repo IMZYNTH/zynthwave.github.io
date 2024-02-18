@@ -40,7 +40,7 @@ class Carousel {
     const backgroundImages = [
       'url("images/dead_bg.png")',// Dead Pirates Card
       'url("images/merc_bg.png")',// Pour Bastards Card
-      'url("images/setup_pic.png")',// zynth Card
+      'url("images/zynth_bg.png")',// zynth Card
       'url("images/pbb_bg.png")', // real Pour Bastards Card
       'url("images/gb_bg.png")'// Art Book
         ];

@@ -4,12 +4,17 @@
     font-family: gothamlight; src: url('gothamlight.ttf') format("truetype");}
     @font-face {
       font-family: avant; src: url('itc_avant_garde_gothic_bold.otf') format("opentype");}
-
+     
+      * {
+        box-sizing: border-box;
+       
+      }
       img {
         width:100%;
       }
 
 footer{
+  width: 100vw;
   background-color: #090909;
 
   margin-top: 40.4976px;
@@ -70,16 +75,15 @@ width: 50%;
 body{
  
   font-family: gothamlight, Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  
-  width: 100%;
-  background-color: #090909
+ background-position:center;
+ background-repeat: no-repeat;
+  width: 100vw;
+  background-color: #090909;
+  overflow: hidden;
 }
 
 
-* {
-  box-sizing: border-box;
- 
-}
+
 .descriptionsection{
   padding-top: 24px;
   padding-bottom: 48px;
@@ -190,8 +194,9 @@ a {
   display: flex;
   flex-direction: row;
   height: fit-content;
-  margin: auto;
+  margin: 10%,auto;
   width: 100%;
+  
 }
 
 .gallery {
@@ -203,6 +208,7 @@ a {
   height: fit-content;
   width: 50%;
   overflow: hidden;
+  margin-left: 15%;
 }
 
 .desc {
@@ -220,20 +226,19 @@ a {
 
 
 .wrapper2{
-  
   display:flex;
   flex-direction: row;
   height: 40px;
   margin: auto;
   width: 100%;
   padding-top: 10px;
+
 }
 
 
 
 
 .buttons{
-  
   display:flex;
   width: 50%;
   overflow: hidden;
@@ -243,6 +248,7 @@ a {
  height: fit-content;
  margin-bottom: 720px;
  z-index: 11;
+ margin-left: 15%;
 }
 
 
@@ -258,6 +264,8 @@ a {
   justify-content: center;
   width: 100%;
   margin: auto;
+  
+ 
 }
 
 
@@ -282,7 +290,6 @@ margin: auto;
   opacity: 1;
   width: auto;
   z-index: 1;
-  border-color: aquamarine;
 }
 .gallery-item-1,
 .gallery-item-5 {
@@ -290,16 +297,13 @@ margin: auto;
   opacity: 1;
   width: auto;
   z-index: 0;
-  border-color: aquamarine;
 }
 .gallery-item-1 {
   opacity: 1;
   transform: translateX(-200%);
-  border-color: aquamarine;
 }
 .gallery-item-2 {
   transform: translateX(-50%);
-  border-color: aquamarine;
 }
 .gallery-item-3 {
   height: 100%;
@@ -307,12 +311,10 @@ margin: auto;
   transform: translateX(0%);
   width: auto;
   z-index: 2;
-  border-color: aquamarine;
 }
 
 .gallery-item-4 {
   transform: translateX(50%);
-  border-color: aquamarine;
 }
 .gallery-item-5 {
   opacity: 1;
