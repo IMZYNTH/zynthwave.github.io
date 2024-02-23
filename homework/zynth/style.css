@@ -107,10 +107,41 @@ body{
   background-color: #dfdfdf;
   width: 10vw;
 }
+.descriptionsection p, .descriptionsectiondead p, .descriptionsectionpmc p{
+  display: flex;
+  margin:auto 25% ;
+  margin-bottom: 2.5%;
+}
+
 .descriptionsection a:hover{
   background-color: #fff;
   
 }
+.descriptionsectiondead{
+  padding-top: 24px;
+  padding-bottom: 48px;
+  text-align: center;
+  width: 100vw;
+  color: #fff;
+  font-size:21.4356px ;
+  background-color: #fff;
+  
+}
+.descriptionsectionpmc{
+  padding-top: 24px;
+  padding-bottom: 48px;
+  text-align: center;
+  width: 100vw;
+  color: #090909;
+  font-size:21.4356px ;
+  background-color: #D683B8;
+  
+}
+.descriptionsectionpmc p{
+ color: #fff;
+  
+}
+
 header {
   
   background-color: #090909;
