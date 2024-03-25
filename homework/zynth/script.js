@@ -131,11 +131,25 @@ class Carousel {
 
 
   setupEventListeners() {
+
+    let wheel_timeout = 0;
+    let skip_wheel = false;
    
     this.carouselContainer.addEventListener('mouseenter', this.handleMouseEnter);
     this.carouselContainer.addEventListener('mouseleave', this.handleMouseLeave);
     this.carouselContainer.addEventListener('wheel', event => {
-     
+      
+      // If user tries to use wheel more than once per second, skip updating carousel
+      if(skip_wheel == true) return;
+      
+      skip_wheel = true;
+      setTimeout(() => {
+        skip_wheel = false;
+      }, 1000);
+      
+      console.log(event)
+
+
       if (this.isHovered) {
         event.preventDefault();
         const direction = event.deltaY > 0 ? 'next' : 'previous';
