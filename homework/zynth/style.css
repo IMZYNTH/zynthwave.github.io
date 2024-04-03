@@ -1,7 +1,7 @@
 @font-face {
-  font-family: gotham; src: url('GothamThin.otf') format("opentype");}
+  font-family: gothamlight; src: url('GothamThin.otf') format("opentype");}
   @font-face {
-    font-family: gothamlight; src: url('gothamlight.otf') format("opentype");}
+    font-family: gotham; src: url('gothamlight.otf') format("opentype");}
     @font-face {
       font-family: avant; src: url('itc_avant_garde_gothic_bold.otf') format("opentype");}
      
