@@ -162,16 +162,19 @@ a {
   height: fit-content;
   margin: auto;
   width: 100%;
+  transform: scale(100%);
+  overflow: hidden; 
+padding: 2.5%;
 }
 
 .gallery {
-  
+  border: solid red;
   display: flex;
   align-items: center;
   justify-content: center;
   height: fit-content;
   width: 50%;
-  overflow: hidden;
+  position: relative;
 }
 
 .desc {
@@ -189,28 +192,24 @@ a {
 
 
 .wrapper2{
-  
-  display:flex;
-  flex-direction: row;
-  height: 40px;
+  border: solid blue;
+  height: 2.5%;
   margin: auto;
   width: 100%;
-  padding-top: 10px;
+  
 }
 
 
 
 
 .buttons{
-  
+  border:solid#fff;
   display:flex;
-  width: 50%;
-  overflow: hidden;
+  width: 100%;
  align-items: center;
  justify-content: center;
- position: relative;
- height: fit-content;
- margin-bottom: 720px;
+ position: absolute;
+ height: 100%;
  z-index: 11;
 }
 
@@ -221,7 +220,7 @@ a {
   align-items: center;
   display:flex;
   max-height:720px;
-  height:720px;
+  height:500px;
   position: relative;
   justify-content: center;
   width: 100%;
@@ -307,18 +306,14 @@ margin-bottom: 25px;
 
 
 .gallery-controls {
+border: solid red;
+display: flex;
+width: 100%; /* Full width to cover the gallery */
 
-  display: flex;
-  justify-content: space-between;
-  align-items:center;
-  height: fit-content;
-  width: 100%;
-  
   
  
 }
 .gallery-controls button {
-  
   opacity: 25%;
   cursor:pointer;
   font-size: 0px;
@@ -340,19 +335,27 @@ margin-bottom: 25px;
   opacity:100% ;
 }
 
+.gallery-controls-previous, 
+.gallery-controls-next {
+  position: absolute;
+  
+  z-index: 2; /* Ensure buttons are above other content */
+}
+
 .gallery-controls-previous {
+  left: 0; /* Place on the left edge */
   background-color: transparent;
   position: relative;
   color: transparent;
 }
 .gallery-controls-next {
-
+  right: 0; /* Place on the right edge */
   position: relative;
   color: transparent;
   background-color: transparent;
 }
 .gallery-controls-previous::before {
- 
+ border: solid green;
   content: 'previous';
   display: flex;
   background-image: url(images/arrow2.svg);
@@ -361,25 +364,20 @@ margin-bottom: 25px;
   width: 21.84px;
   position:relative;
   transition: left 0.15s ease-in-out;
-  align-items: center;
-  justify-content: center;
   flex: 1;
+  margin-left: 0;
 }
 
-
-
 .gallery-controls-next::before {
- 
   content: 'next';
   display: flex;
   background-image: url(images/arrow1.svg);
   background-repeat: no-repeat;
-  height: 40.08px;
+  height:40.08px;
   width:21.84px ;
   position: relative;
   transition: right 0.15s ease-in-out;
-  align-items: center;
-  justify-content: center;
+  
   flex: 1;
 }
 

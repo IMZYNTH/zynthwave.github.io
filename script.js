@@ -37,24 +37,38 @@ class Carousel {
   updateDescription() {
     const currentIndex = this.carouselArray.findIndex(item => item.classList.contains('gallery-item-selected'));
     const descriptionItems = document.querySelectorAll('.description-item');
-    const backgroundColors = ['##090909', '##090909', '##090909', '##090909', '#090909']; // Add your desired background colors
-
-
+    const backgroundImages = [
+      'url("images/dead_bg.png")', // Dead Pirates Card
+      'url("images/merc_bg.png")', // Pour Bastards Card
+      'url("images/setup_pic2.png")', // Zynth Card
+      'url("images/pbb_bg.png")', // Real Pour Bastards Card
+      'url("images/gb_bg.png")' // Art Book
+    ];
+  
     descriptionItems.forEach(description => {
       description.style.display = 'none'; // Hide all descriptions initially
     });
-
-
+  
     if (currentIndex !== -1) {
       const selectedDescription = document.querySelector(`.description-item-${currentIndex + 1}`);
       if (selectedDescription) {
         selectedDescription.style.display = 'block'; // Show the description for the selected item
-             document.body.style.backgroundColor = backgroundColors[currentIndex];
-
+  
+        // Get the wrapper container (the parent element of the gallery)
+        const wrapperContainer = document.querySelector('.wrapper'); // Assuming the wrapper has the class 'wrapper'
+  
+        // Apply the background to the wrapper container (not the gallery)
+        if (window.innerWidth >= 1080) {
+          wrapperContainer.style.backgroundImage = backgroundImages[currentIndex];
+          wrapperContainer.style.backgroundPosition = 'center'; // Center the background image
+          wrapperContainer.style.backgroundSize = 'cover'; // Ensure the background covers the container
+        } else {
+          // Remove the background image on smaller screens
+          wrapperContainer.style.backgroundImage = 'none';
+        }
       }
     }
   }
-
 
 
 
@@ -109,11 +123,25 @@ class Carousel {
 
 
   setupEventListeners() {
+
+    let wheel_timeout = 0;
+    let skip_wheel = false;
    
     this.carouselContainer.addEventListener('mouseenter', this.handleMouseEnter);
     this.carouselContainer.addEventListener('mouseleave', this.handleMouseLeave);
     this.carouselContainer.addEventListener('wheel', event => {
-     
+      
+      // If user tries to use wheel more than once per second, skip updating carousel
+      if(skip_wheel == true) return;
+      
+      skip_wheel = true;
+      setTimeout(() => {
+        skip_wheel = false;
+      }, 1000);
+      
+      console.log(event)
+
+
       if (this.isHovered) {
         event.preventDefault();
         const direction = event.deltaY > 0 ? 'next' : 'previous';
@@ -179,8 +207,8 @@ const projectDescription = document.getElementById('project-description');
 
 galleryItems.forEach(item => {
   item.addEventListener('click', () => {
-    const selectedIndex = item.dataset.index;
-    updateProjectDescription(selectedIndex);
+   // Prevent changing the selected item on click
+    event.stopPropagation();
    
   });
 });
