@@ -168,7 +168,7 @@ padding: 2.5%;
 }
 
 .gallery {
-  border: solid red;
+ 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -192,7 +192,6 @@ padding: 2.5%;
 
 
 .wrapper2{
-  border: solid blue;
   height: 2.5%;
   margin: auto;
   width: 100%;
@@ -204,7 +203,6 @@ padding: 2.5%;
 
 
 .buttons{
-  border:solid white;
   display:flex;
   width: 100%;
  align-items: center;
@@ -310,7 +308,6 @@ margin-bottom: 25px;
 
 
 .gallery-controls {
-border: solid red;
 display: flex;
 width: 100%; /* Full width to cover the gallery */
 
@@ -318,7 +315,7 @@ width: 100%; /* Full width to cover the gallery */
  
 }
 .gallery-controls button {
-  opacity: 25%;
+  opacity: 50%;
   cursor:pointer;
   font-size: 0px;
   margin: auto;
@@ -360,7 +357,6 @@ left:-15%; /* Place on the left edge */
   background-color: transparent;
 }
 .gallery-controls-previous::before {
- border: solid green;
   content: 'previous';
   display: flex;
   background-image: url(images/arrow2.svg);

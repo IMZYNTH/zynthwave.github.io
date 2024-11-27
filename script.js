@@ -39,7 +39,7 @@ class Carousel {
     const descriptionItems = document.querySelectorAll('.description-item');
     const backgroundImages = [
       'url("images/dead_bg.png")', // Dead Pirates Card
-      'url("images/merc_bg.png")', // Pour Bastards Card
+      'url("images/tagmagbg5.png")', // Pour Bastards Card
       'url("images/setup_pic2.png")', // Zynth Card
       'url("images/pbb_bg.png")', // Real Pour Bastards Card
       'url("images/gb_bg.png")' // Art Book
