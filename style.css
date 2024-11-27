@@ -196,7 +196,8 @@ padding: 2.5%;
   height: 2.5%;
   margin: auto;
   width: 100%;
- 
+ justify-content: center;
+ align-items:center;
 }
 
 
@@ -208,9 +209,12 @@ padding: 2.5%;
   width: 100%;
  align-items: center;
  justify-content: center;
- position: absolute;
+ position:absolute;
  height: 100%;
+ top:0%;
+ right:0%;
  z-index: 11;
+ margin: auto;
 }
 
 
