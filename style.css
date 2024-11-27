@@ -355,7 +355,7 @@ left:-20%; /* Place on the left edge */
 
 }
 .gallery-controls-next {
-  right: -20%; /* Place on the right edge */
+  right:-20%; /* Place on the right edge */
   position: relative;
   color: transparent;
   background-color: transparent;
