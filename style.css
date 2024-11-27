@@ -318,11 +318,11 @@ width: 100%; /* Full width to cover the gallery */
   cursor:pointer;
   font-size: 0px;
   margin: auto;
-  padding: 0 2px;
+  justify-content:center;
   text-transform: capitalize;
   color: none;
-  border:none
- 
+  border:none;
+  
 }
 .gallery-controls button:focus {
   outline: none;
@@ -343,13 +343,14 @@ width: 100%; /* Full width to cover the gallery */
 }
 
 .gallery-controls-previous {
-  left: 0; /* Place on the left edge */
+left:-15%; /* Place on the left edge */
   background-color: transparent;
   position: relative;
   color: transparent;
+
 }
 .gallery-controls-next {
-  right: 0; /* Place on the right edge */
+  right: -15%; /* Place on the right edge */
   position: relative;
   color: transparent;
   background-color: transparent;
