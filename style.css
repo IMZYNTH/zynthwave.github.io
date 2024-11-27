@@ -118,7 +118,12 @@ a {
   width: 100%;
   margin:auto;
 }
-
+ul{
+ display: inline-block;
+}
+li{
+  text-align: left;
+}
 #navbar ul {
   
   z-index: 5;
