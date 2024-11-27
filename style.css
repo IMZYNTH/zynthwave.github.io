@@ -10,9 +10,13 @@
       }
 
 footer{
- 
+ text-align: center;
+ color: #777;
   margin-top: 40.4976px;
   padding-top: 40.4976px;
+}
+footer p{
+  margin-top: 40.4976px;
 }
 .main-box{
   
@@ -344,14 +348,14 @@ width: 100%; /* Full width to cover the gallery */
 }
 
 .gallery-controls-previous {
-left:-15%; /* Place on the left edge */
+left:-20%; /* Place on the left edge */
   background-color: transparent;
   position: relative;
   color: transparent;
 
 }
 .gallery-controls-next {
-  right: -15%; /* Place on the right edge */
+  right: -20%; /* Place on the right edge */
   position: relative;
   color: transparent;
   background-color: transparent;
@@ -434,7 +438,7 @@ opacity: 1;
 }
 
 .copytext{
-  padding: 40.4976;
+  
   padding-bottom: 65.8px; 
   font-size:10.8677px ;
   text-align: center;
