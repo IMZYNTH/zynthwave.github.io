@@ -319,7 +319,7 @@ width: 100%; /* Full width to cover the gallery */
  
 }
 .gallery-controls button {
-  opacity: 50%;
+  opacity: 100%;
   cursor:pointer;
   font-size: 0px;
   margin: auto;
