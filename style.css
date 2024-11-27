@@ -196,14 +196,14 @@ padding: 2.5%;
   height: 2.5%;
   margin: auto;
   width: 100%;
-  
+ 
 }
 
 
 
 
 .buttons{
-  border:solid#fff;
+  border:solid white;
   display:flex;
   width: 100%;
  align-items: center;
@@ -852,7 +852,7 @@ line-height: 1em;
           }
     
     /* Add a media query for screens narrower than 1080px */
-    @media (max-width: 1080px) {
+    @media (max-width: 1079px) {
       .wrapper {
         flex-direction: column; /* Change to column layout */
       }
@@ -866,7 +866,7 @@ line-height: 1em;
       .wrapper2 {
         
         display: flex;
-        flex-direction: column;
+        flex-direction:column;
         height: fit-content;
         margin: auto;
         width: 100%; /* Take up full width */
