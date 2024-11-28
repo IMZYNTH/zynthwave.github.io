@@ -30,7 +30,7 @@ footer p{
   display: flex;
  align-items: center;
   width:fit-content;
-  height: 50%;
+  height: 100%;
   
   background-color: rgb(9, 10, 10);
   margin: auto;
@@ -42,9 +42,8 @@ position: relative;
 #main img{
 
 
-width: 50%;
+width: 100%;
 
-object-fit: cover;
 margin: auto;
 position: relative;
 align-items: center;
