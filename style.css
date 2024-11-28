@@ -372,8 +372,8 @@ left:-20%; /* Place on the left edge */
   display: flex;
   background-image: url(images/arrow2.svg);
   background-repeat: no-repeat;
-  height: 40.08px;
-  width: 21.84px;
+  height:43.6px;
+  width:63.8px;
   position:relative;
   transition: left 0.15s ease-in-out;
   flex: 1;
@@ -385,12 +385,13 @@ left:-20%; /* Place on the left edge */
   display: flex;
   background-image: url(images/arrow1.svg);
   background-repeat: no-repeat;
-  height:40.08px;
-  width:21.84px ;
+  height:43.6px;
+  width:63.8px;
   position: relative;
   transition: right 0.15s ease-in-out;
   
   flex: 1;
+  margin-right: 0;
 }
 
 
