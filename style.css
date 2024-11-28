@@ -7,6 +7,8 @@
 
       img {
         width:100%;
+        display: block;
+        margin: auto;
       }
 
 footer{
@@ -87,10 +89,82 @@ header {
   justify-content:center;
   
 }
+.image{
 
+  width: 500px;
+  height: 500px;
+  position: relative;
+margin: 5px;
 
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
 
+}
 
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image:hover img {
+  transform: scale(1.15);
+}
+
+#navbar ul li a.active-page
+{
+  color: #fff;
+}
+
+.imagegallery{
+  align-items: center;
+  justify-content: center;
+ width: 100%;
+ height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.imagegallery a{
+  padding: 10px;
+}
+.content{
+  width: 100%;
+  height: 100%;
+  top: 0;
+left: 0;
+position: absolute;
+background: rgba(0, 0, 0, 1);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+opacity: 0;
+transition: 0.6s;
+}
+.content:hover{
+  opacity: 1;
+}
+.content h1{
+  font-size: 45px;
+  font-family: gotham;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.content p{
+  font-size:19px;
+  color: #fff;
+}
+.content > *{
+  translate:translateY(25px);
+  transition: transform 0.6s;
+}
+.content:hover > *{
+  translate:translateY(0px);
+}
 .homebutton {
   
   padding-top: 40.4976px; 
@@ -486,17 +560,7 @@ color: #fff;
 
 
 
-.imagegallery{
-  align-items: center;
-  justify-content: center;
- 
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.imagegallery a{
-  padding: 10px;
-}
 
 
 .parallax{
