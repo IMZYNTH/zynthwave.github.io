@@ -19,11 +19,11 @@ footer p{
   margin-top: 40.4976px;
 }
 .main-box{
-  
+  margin: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: fit-content
 }
 #main{
   flex-direction: column;
@@ -42,8 +42,8 @@ position: relative;
 #main img{
 
 
-width: 700px;
-height: 500px;
+width: 50%;
+
 object-fit: cover;
 margin: auto;
 position: relative;
@@ -53,14 +53,11 @@ justify-content: center;
 
 #main p{
   display: flex;
- 
-
-  text-align: center;
+   text-align: center;
   font-size:21.4356px ;
   font-family: gotham;
-
 margin: auto;
-width: 50%;
+padding: 3%;
 }
 #main a:hover{
   
