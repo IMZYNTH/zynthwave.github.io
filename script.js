@@ -38,11 +38,11 @@ class Carousel {
     const currentIndex = this.carouselArray.findIndex(item => item.classList.contains('gallery-item-selected'));
     const descriptionItems = document.querySelectorAll('.description-item');
     const backgroundImages = [
-      'url("images/dead_bg.png")', // Dead Pirates Card
-      'url("images/tagmagbg5.png")', // Pour Bastards Card
+      'url("images/merc_bg.png")', // Portland Mercury Cover Project
+      'url("images/tagmagbg5.png")', // Tagmag Card
       'url("images/setup_pic2.png")', // Zynth Card
-      'url("images/pbb_bg.png")', // Real Pour Bastards Card
-      'url("images/gb_bg.png")' // Art Book
+      'url("images/pbb_bg.png")', // Pour Bastards Card
+      'url("images/hyskibg3.png")' // Hyski Property Solutions
     ];
   
     descriptionItems.forEach(description => {
