@@ -100,6 +100,49 @@ margin: 5px;
   transition: transform 0.3s ease-in-out;
 
 }
+.textwrapper{
+  background-color: #F7F9F9;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.eyebrow p{
+  
+  color: #777;
+  font-size: 12px;
+}
+.text-container{
+  border: solid red;
+  padding: 20%;
+  flex: 1;
+box-sizing: border-box;
+  background-color: #F7F9F9;
+  color: #090909;
+}
+.text-container ul{
+  text-align: left;
+  align-items: center;
+  font-family: gotham;
+  font-size: 21.4356px;
+margin-bottom: 25px;
+}
+  
+
+.text-container h1{
+  font-family: avant;
+  font-size: 56.116px;
+line-height: 50px;
+margin-bottom: 25px;
+
+}
+.text-container p{
+  text-align: left;
+  align-items: center;
+  font-family: gotham;
+  font-size: 21.4356px;
+margin-bottom: 25px;
+}
 
 .image img {
   width: 100%;
@@ -148,7 +191,7 @@ transition: 0.6s;
 }
 .content h1{
   font-size: 45px;
-  font-family: gotham;
+  font-family: avant;
   color: #fff;
   margin-bottom: 15px;
 }
@@ -385,7 +428,15 @@ margin-bottom: 25px;
   padding: 2%;
   text-align:center;
 }
-
+.textwrapper a:hover{
+  color: #777;
+}
+.textwrapper a{
+  color: #f7f9f9;
+  background-color:#090909;
+  padding: 2%;
+  text-align:center;
+}
 
 
 
@@ -393,7 +444,6 @@ margin-bottom: 25px;
 .gallery-controls {
 display: flex;
 width: 100%; /* Full width to cover the gallery */
-
   
  
 }
@@ -427,44 +477,45 @@ width: 100%; /* Full width to cover the gallery */
 }
 
 .gallery-controls-previous {
-left:-20%; /* Place on the left edge */
+left:0; /* Place on the left edge */
   background-color: transparent;
-  position: relative;
+  position: absolute;
   color: transparent;
 
 }
 .gallery-controls-next {
-  right:-20%; /* Place on the right edge */
-  position: relative;
+  
+  right:0; /* Place on the right edge */
+  position: absolute;
   color: transparent;
   background-color: transparent;
 }
 .gallery-controls-previous::before {
+
+
   content: 'previous';
   display: flex;
   background-image: url(images/arrow2.svg);
   background-repeat: no-repeat;
   height:43.6px;
-  width:63.8px;
+  width:23.8px;
   position:relative;
   transition: left 0.15s ease-in-out;
   flex: 1;
-  margin-left: 0;
 }
 
 .gallery-controls-next::before {
+
   content: 'next';
   display: flex;
   background-image: url(images/arrow1.svg);
   background-repeat: no-repeat;
   height:43.6px;
-  width:63.8px;
+  width:23.8px;
   position: relative;
   transition: right 0.15s ease-in-out;
-  
-  flex: 1;
-  margin-right: 0;
-}
+    flex: 1;
+  }
 
 
 
