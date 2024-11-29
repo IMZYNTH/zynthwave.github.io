@@ -119,14 +119,16 @@ justify-content: center;
 }
 .imagebox{
   text-align: center;
-  border: solid red;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  min-width: 250px;
+  max-width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   margin: 10;
+  height: auto;
+  flex: 1;
 }
 .imagebox img{
   width: 100%;
