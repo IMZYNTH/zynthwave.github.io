@@ -105,7 +105,6 @@ margin: 5px;
 
 }
 .imagecontainer{
-  border: solid red;
   display: flex;
   max-width: 100%;
   background-color: #F7F9F9;
@@ -188,7 +187,6 @@ animation-range: entry 0;
   font-size: 12px;
 }
 .text-container{
-  border: solid blue;
   padding-left: 20%;
   padding-right: 20%;
   padding-top: 10%;
