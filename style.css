@@ -116,6 +116,22 @@ margin: 5px;
   width: 30%;
 margin: 10px;
 justify-content: center;
+animation: appear 5s linear;
+}
+@keyframes appear{
+  from{
+    opacity:0;  
+    scale: 0.5;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+
+.h1a{
+  text-align: center;
 }
 .imagebox{
   text-align: center;
@@ -128,7 +144,6 @@ justify-content: center;
   flex-direction: column;
   margin: 10;
   height: auto;
-  flex: 1;
 }
 .imagebox img{
   width: 100%;
@@ -167,7 +182,7 @@ justify-content: center;
 .text-container{
   padding-left: 20%;
   padding-right: 20%;
-  padding-top: 20%;
+  padding-top: 10%;
 padding-bottom: 10%;
   flex: 1;
 box-sizing: border-box;
