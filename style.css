@@ -116,7 +116,7 @@ margin: 5px;
   width: 30%;
 margin: 10px;
 justify-content: center;
-animation: appear 5s linear;
+
 }
 @keyframes appear{
   from{
@@ -144,6 +144,9 @@ animation: appear 5s linear;
   flex-direction: column;
   margin: 10;
   height: auto;
+  animation: appear 5s linear;
+animation-timeline: view();
+animation-range: entry 0;
 }
 .imagebox img{
   width: 100%;
