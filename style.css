@@ -105,18 +105,22 @@ margin: 5px;
 
 }
 .imagecontainer{
+  border: solid red;
   display: flex;
-  width: 100%;
+  max-width: 100%;
   background-color: #F7F9F9;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  position: relative;
 }
 .imagecontainer img{
+  display: flex;
   flex: 1;
-  width: 30%;
 margin: 10px;
 justify-content: center;
-
+max-width: 100%;
+min-width: none;
 }
 @keyframes appear{
   from{
@@ -135,10 +139,10 @@ transform: translateY(-300px);
   padding: 0%;
 }
 .imagebox{
+  display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
-  min-width: 250px;
   max-width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -184,6 +188,7 @@ animation-range: entry 0;
   font-size: 12px;
 }
 .text-container{
+  border: solid blue;
   padding-left: 20%;
   padding-right: 20%;
   padding-top: 10%;
