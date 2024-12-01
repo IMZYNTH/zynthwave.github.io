@@ -241,6 +241,7 @@ transform: translateY(-300px);
   display: flex;
   flex-direction: column;
   margin: 10;
+  padding-bottom: 5%;
 }
 .imagebox2 img{
   width: 100%;
