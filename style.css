@@ -224,7 +224,9 @@ transform: translateY(-300px);
   height: auto;
   padding-top: 3%;
   padding-bottom: 3%;
-  
+  padding-right: 25%;
+  padding-left: 25%;
+
 }
 .imagebox img{
   width: 100%;
@@ -246,6 +248,7 @@ transform: translateY(-300px);
 }
 
 .imagebox3{
+flex: 1;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -254,14 +257,16 @@ transform: translateY(-300px);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  margin: 10;
+  margin: 50;
   height: auto;
   
 }
 .imagebox3 img{
   width: 100%;
-  margin: 0;
+  margin: 10px;
+  
 }
+
 .caption {
   margin-top: 10px;  /* Space between the image and its caption */
   font-size:21.4356px ;   /* Adjust caption font size */
