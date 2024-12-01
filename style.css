@@ -146,7 +146,7 @@ padding-bottom:10% ;
   display: flex;
 }
 .showcasevid{
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 .c-video{
@@ -246,7 +246,10 @@ transform: translateY(-300px);
   width: 100%;
   margin: 0;
 }
-
+.spread img{
+  width: 1920px;
+  height: auto;
+}
 .imagebox3{
 flex: 1;
   display: flex;
