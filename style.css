@@ -20,6 +20,15 @@ footer{
 footer p{
   margin-top: 40.4976px;
 }
+footer1{
+  text-align: center;
+  color: #f7f9f9;
+   margin-top: 40.4976px;
+   padding-top: 40.4976px;
+ }
+ footer1 p{
+   margin-top: 40.4976px;
+ }
 .main-box{
   margin: 40vh;
   display: flex;
@@ -744,6 +753,28 @@ opacity: 1;
   }
 
 .socials img {
+  height: 100%;
+}
+.socials1 {
+  
+  margin: 28.1276px ;
+  display: flex;
+  height: 28.34px;
+  justify-content: space-around;
+  align-items: center;
+  width: 256.0272px;
+  margin: auto;
+
+}
+
+.socials1 a:hover{
+opacity: .5;
+}
+.socials1 a{
+  opacity:1;
+  }
+
+.socials1 img {
   height: 100%;
 }
 
