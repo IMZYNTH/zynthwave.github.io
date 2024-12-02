@@ -530,7 +530,7 @@ padding: 2.5%;
   align-items: center;
   display:flex;
   max-height:720px;
-  height:500px;
+  min-height:500px;
   position: relative;
   justify-content: center;
   width: 100%;
@@ -666,7 +666,7 @@ width: 100%; /* Full width to cover the gallery */
 }
 
 .gallery-controls-previous {
-left:0; /* Place on the left edge */
+left:100; /* Place on the left edge */
   background-color: transparent;
   position: absolute;
   color: transparent;
@@ -674,7 +674,7 @@ left:0; /* Place on the left edge */
 }
 .gallery-controls-next {
   
-  right:0; /* Place on the right edge */
+  right:100; /* Place on the right edge */
   position: absolute;
   color: transparent;
   background-color: transparent;
@@ -1137,7 +1137,20 @@ line-height: 1em;
 
 
     @media (min-width: 1080px) {
-
+      .gallery-controls-previous {
+        left:100; /* Place on the left edge */
+          background-color: transparent;
+          position: absolute;
+          color: transparent;
+        
+        }
+        .gallery-controls-next {
+          
+          right:100; /* Place on the right edge */
+          position: absolute;
+          color: transparent;
+          background-color: transparent;
+        }
       .empty{
         display: inline-flex;
        
@@ -1204,41 +1217,16 @@ line-height: 1em;
         
         display: flex;
         flex-direction:column;
-        height: fit-content;
+        height: auto;
         margin: auto;
         width: 100%; /* Take up full width */
       }
     
-      .empty{
-        display: none;
-        
+     
     
-        
-        width:10%;
-        margin:auto;
-       max-width: 50%;
-      height: fit-content;
-      flex: 50%;
-      position: relative;
-      }
     
-      .buttons {
-        
-        display: inline-flex;
-        width: 100%; /* Take up full width */
-        margin:  auto;
-        max-width: 100%; /* Adjust max-width for .empty */
-        height: fit-content;
-        flex: 100%; /* Take up full width */
-        position: relative;
-      }
       
-      .buttons {
-        
-        overflow: hidden;
-        align-items: center;
-        justify-content: center;
-      }
+    
       .description-item{
         text-align: center;
     align-items: center;
