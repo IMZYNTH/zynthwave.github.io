@@ -1136,21 +1136,8 @@ line-height: 1em;
     }
 
 
-    @media (min-width: 1080px) {
-      .gallery-controls-previous {
-        left:100; /* Place on the left edge */
-          background-color: transparent;
-          position: absolute;
-          color: transparent;
-        
-        }
-        .gallery-controls-next {
-          
-          right:100; /* Place on the right edge */
-          position: absolute;
-          color: transparent;
-          background-color: transparent;
-        }
+    @media (min-width: 1079px) {
+     
       .empty{
         display: inline-flex;
        
@@ -1206,6 +1193,7 @@ line-height: 1em;
       .wrapper {
         flex-direction: column; /* Change to column layout */
       }
+      
     
       .gallery,
       .desc {
@@ -1221,7 +1209,7 @@ line-height: 1em;
         margin: auto;
         width: 100%; /* Take up full width */
       }
-    
+   
      
     
     
