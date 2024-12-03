@@ -31,7 +31,6 @@ footer1{
  }
 .main-box{
   padding-top: 25vh;
-  border: solid white;
   text-align: center;
   margin: auto;
   
@@ -43,7 +42,6 @@ footer1{
   
 }
 .main-box a{
-  border: solid red;
   text-align: center;
   margin: auto;
   font-size: 50px;
@@ -52,7 +50,6 @@ footer1{
   font-size: 21.4356px;
 }
 .main{
-  border: solid green;
   flex-direction: column;
   display: flex;
  align-items: center;
