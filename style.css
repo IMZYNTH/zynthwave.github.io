@@ -683,7 +683,7 @@ width: 100%; /* Full width to cover the gallery */
 }
 
 .gallery-controls-previous {
-left:0; /* Place on the left edge */
+left:-5; /* Place on the left edge */
   background-color: transparent;
   position: absolute;
   color: transparent;
@@ -691,7 +691,7 @@ left:0; /* Place on the left edge */
 }
 .gallery-controls-next {
   
-  right:0; /* Place on the right edge */
+  right:-5; /* Place on the right edge */
   position: absolute;
   color: transparent;
   background-color: transparent;
