@@ -30,9 +30,11 @@ footer1{
    margin-top: 40.4976px;
  }
 .main-box{
+  padding-top: 25vh;
+  border: solid white;
   text-align: center;
   margin: auto;
-  padding: 50%;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,10 +43,16 @@ footer1{
   
 }
 .main-box a{
-  font-size: 56.116px;
+  border: solid red;
+  text-align: center;
+  margin: auto;
+  font-size: 50px;
 }
-
-#main{
+.main-box p{
+  font-size: 21.4356px;
+}
+.main{
+  border: solid green;
   flex-direction: column;
   display: flex;
  align-items: center;
@@ -168,7 +176,7 @@ padding-bottom:10% ;
   justify-content: center;
   align-items: center;
   display: flex;
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 .c-video{
